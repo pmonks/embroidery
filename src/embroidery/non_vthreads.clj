@@ -22,4 +22,7 @@
 (def pmap* "Version of clojure.core/pmap which uses JDK 21+ virtual threads when available." pmap)
 
 ; Fallback on vanilla future
-(def future* "Version of clojure.core/future which uses JDK 21+ virtual threads when available." future)
+(defmacro future*
+  "Version of clojure.core/future which uses JDK 21+ virtual threads when available."
+  [& body]
+  `(future ~@body))
