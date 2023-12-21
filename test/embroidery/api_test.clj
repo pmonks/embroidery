@@ -20,14 +20,32 @@
   (:require [clojure.test   :refer [deftest testing is]]
             [embroidery.api :refer [pmap* future*]]))
 
+(defn- valid=
+  [expected actual]
+  (and (seq? actual)
+       (= expected actual)))
+
 (deftest pmap*-tests
   (testing "nil, empty input"
-    (is (= '() (pmap* nil nil)))
-    (is (= '() (pmap* nil '())))
-    (is (= '() (pmap* nil [])))
-    (is (= '() (pmap* identity nil)))
-    (is (= '() (pmap* identity '())))
-    (is (= '() (pmap* identity []))))
+    (is (valid= '() (pmap* nil nil)))
+    (is (valid= '() (pmap* nil '())))
+    (is (valid= '() (pmap* nil [])))
+    (is (valid= '() (pmap* identity nil)))
+    (is (valid= '() (pmap* identity '())))
+    (is (valid= '() (pmap* identity []))))
   (testing "non-empty input"
-    (is (= '(:a) (pmap* identity [:a])))
-    (is (= '(:a) (pmap* identity '(:a))))))
+    (is (valid= '(:a) (pmap* identity [:a])))
+    (is (valid= '(:a) (pmap* identity '(:a))))
+    (is (valid= '(1 2 3 4 5 6 7 8 9 10) (pmap* inc (range 10))))))
+
+(deftest future*-tests
+  (testing "empty input"
+    (is (not (nil? (future*))))
+    (is (nil? @(future*)))
+    (is (nil? @(future* nil))))
+  (testing "non-empty input"
+    (is (= :a @(future* :a)))
+    (is (= '(1 2 3 4 5 6 7 8 9 10) @(future (map inc (range 10))))))
+  (testing "timeouts"
+    (is (= :timed-out     (deref (future (Thread/sleep 100) :not-timed-out) 10  :timed-out)))
+    (is (= :not-timed-out (deref (future (Thread/sleep 10)  :not-timed-out) 100 :timed-out)))))

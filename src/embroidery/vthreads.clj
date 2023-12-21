@@ -28,18 +28,22 @@
   (java.util.concurrent.Executors/newThreadPerTaskExecutor @embroidery-vthread-factory))
 
 (defn pmap*
-  "Version of clojure.core/pmap which uses JDK 21+ virtual threads when available."
+  "Version of clojure.core/pmap which uses JDK 21+ virtual threads when available.
+
+Note: virtual thread version is _not_ lazy."
   [f coll]
   (let [executor (new-vthread-executor)
         futures  (mapv #(.submit executor (reify java.util.concurrent.Callable (call [_] (f %)))) coll)
         ret      (mapv #(.get ^java.util.concurrent.Future %) futures)]
     (.shutdownNow executor)
-    ret))
+    (if (empty? ret)
+      '()
+      (seq ret))))
 
 (def ^:private future-vthread-executor (delay (new-vthread-executor)))
 
-(defn- future-call*
-  "Version of future-call that uses JDK 21+ virtual threads."
+(defn future-call*
+  "Version of clojure.core/future-call that uses JDK 21+ virtual threads when available."
   [f]
   (let [f   ^clojure.lang.IFn (#'clojure.core/binding-conveyor-fn f)
         fut ^java.util.concurrent.Future (.submit ^java.util.concurrent.ExecutorService @future-vthread-executor ^Callable f)]
@@ -59,6 +63,7 @@
       (isDone [_] (.isDone fut))
       (cancel [_ interrupt?] (.cancel fut interrupt?)))))
 
-(defn future*
+(defmacro future*
   "Version of clojure.core/future which uses JDK 21+ virtual threads when available."
-  [& body] `(future-call* (^{:once true} fn* [] ~@body)))
+  [& body]
+  `(future-call* (^{:once true} fn* [] ~@body)))

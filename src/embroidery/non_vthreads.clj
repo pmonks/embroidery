@@ -19,7 +19,15 @@
 (in-ns 'embroidery.api)
 
 ; Fallback on vanilla pmap
-(def pmap* "Version of clojure.core/pmap which uses JDK 21+ virtual threads when available." pmap)
+(def pmap*
+  "Version of clojure.core/pmap which uses JDK 21+ virtual threads when available.
+
+Note: virtual thread version is _not_ lazy."
+     pmap)
+
+(def future-call*
+  "Version of clojure.core/future-call that uses JDK 21+ virtual threads when available."
+  future-call)
 
 ; Fallback on vanilla future
 (defmacro future*
