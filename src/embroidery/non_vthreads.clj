@@ -25,6 +25,7 @@
 Note: virtual thread version is _not_ lazy."
      pmap)
 
+; Fallback on vanilla future-call
 (def future-call*
   "Version of clojure.core/future-call that uses JDK 21+ virtual threads when available."
   future-call)
