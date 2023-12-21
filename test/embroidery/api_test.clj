@@ -45,7 +45,7 @@
     (is (nil? @(future* nil))))
   (testing "non-empty input"
     (is (= :a @(future* :a)))
-    (is (= '(1 2 3 4 5 6 7 8 9 10) @(future (map inc (range 10))))))
+    (is (= '(1 2 3 4 5 6 7 8 9 10) @(future* (map inc (range 10))))))
   (testing "timeouts"
-    (is (= :timed-out     (deref (future (Thread/sleep 100) :not-timed-out) 10  :timed-out)))
-    (is (= :not-timed-out (deref (future (Thread/sleep 10)  :not-timed-out) 100 :timed-out)))))
+    (is (= :timed-out     (deref (future* (Thread/sleep 100) :not-timed-out) 10  :timed-out)))
+    (is (= :not-timed-out (deref (future* (Thread/sleep 10)  :not-timed-out) 100 :timed-out)))))
