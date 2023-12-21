@@ -5,6 +5,7 @@
 
 [![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/embroidery)](https://clojars.org/com.github.pmonks/embroidery/) [![Open Issues](https://img.shields.io/github/issues/pmonks/embroidery.svg)](https://github.com/pmonks/embroidery/issues) [![License](https://img.shields.io/github/license/pmonks/embroidery.svg)](https://github.com/pmonks/embroidery/blob/main/LICENSE)
 
+<img alt="embroidery logo: a cross stitch rendition of the Clojure logo" align="right" width="25%" src="embroidery-logo.png">
 
 # embroidery
 
