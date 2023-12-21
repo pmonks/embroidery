@@ -20,8 +20,7 @@ A micro-library for Clojure that provides versions of `pmap` and `future` that h
 #### Clojure CLI
 
 ```shell
-$ # Where #.#.# is replaced with an actual version number (see badge above)
-$ clj -Sdeps '{:deps {com.github.pmonks/embroidery {:mvn/version "#.#.#"}}}'
+$ clj -Sdeps '{:deps {com.github.pmonks/embroidery {:mvn/version "RELEASE"}}}'
 ```
 
 #### Leiningen
