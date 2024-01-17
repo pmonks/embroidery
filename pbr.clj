@@ -22,6 +22,7 @@
   (assoc opts
          :lib          'com.github.pmonks/embroidery
          :version      (pbr/calculate-version 0 1)
+         :prod-branch  "release"
          :write-pom    true
          :validate-pom true
          :pom          {:description      "A Clojure micro-library for leveraging virtual threads on JVMs that support them."
