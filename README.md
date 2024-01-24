@@ -11,7 +11,7 @@
 
 A micro-library for Clojure that provides versions of `pmap` and `future` that have first class support for virtual threads on JVMs that support them, and which transparently falls back on Clojure core `pmap` and `future` when virtual threads are not supported.  These features are opt-in; this library does _not_ monkey patch core Clojure or mess with the thread pools etc. that it sets up.  It has no dependencies, other than on Clojure and any supported JVM, and is [less than 100 lines of code](https://github.com/pmonks/embroidery/tree/dev/src/embroidery).
 
-Note that Clojure versions prior to 1.12 use `synchronized` blocks in the language and core library, which will reduce performance since that construct pins virtual threads to platform threads (see [JEP-444](https://openjdk.org/jeps/444) and search for the first occurrence of the word "synchronized" for details).  Despite this, performance for I/O bound workloads that leverage virtual threads can be substantially better than the same workload running on platform threads, even on older Clojure version.
+Note that Clojure versions prior to 1.12 use `synchronized` blocks in the language and core library, which will reduce performance since that construct pins virtual threads to platform threads (see [JEP-444](https://openjdk.org/jeps/444) and search for the first occurrence of the word "synchronized" for details).  Despite this, performance for I/O bound workloads that leverage virtual threads can be substantially better than the same workload running on platform threads, even on older Clojure versions.
 
 ## Installation
 
