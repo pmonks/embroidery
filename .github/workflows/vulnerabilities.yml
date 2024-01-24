@@ -41,7 +41,8 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/deps.edn') }}
 
       - name: Run NVD vulnerabilities check
-        env: NVD_API_TOKEN: ${{ secrets.NVD_API_TOKEN }}
+        env:
+          NVD_API_TOKEN: ${{ secrets.NVD_API_TOKEN }}
         run: clojure -Srepro -J-Dclojure.main.report=stderr -T:build nvd
 
       - name: Deploy NVD vulnerability report (release branch only)
