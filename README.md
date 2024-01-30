@@ -101,7 +101,7 @@ On JVMs that don't support virtual threads (where embroidery falls back on using
 ;=> nil
 ```
 
-While it could be argued that this is merely highlighting a limitation of `clojure.core/pmap`'s (i.e. its fixed size thread pool), the reality is that there are good reasons for it to be implemented that way, and the alternatives on JVMs without virtual threads (i.e. spinning up several thousand platform threads for this workload) have substantial downsides and likely still won't perform as well as virtual threads do.
+While it could be argued that this is merely highlighting a limitation of `clojure.core/pmap` (i.e. its fixed size thread pool), the reality is that there are good reasons for it to be implemented that way, and the alternatives on JVMs without virtual threads (i.e. spinning up several thousand platform threads for this workload) have substantial downsides and likely still won't perform as well as virtual threads do.
 
 ## Usage
 
