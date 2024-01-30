@@ -93,6 +93,27 @@ nil
 
 While it could be argued that this is merely highlighting a limitation of `clojure.core/pmap` (i.e. its fixed size thread pool and "chunking" approach), the reality is that there are good reasons for it to be implemented that way, and the alternatives on JVMs without virtual threads (i.e. spinning up several thousand platform threads for this workload) have substantial downsides and likely still won't perform as well as virtual threads do.
 
+For example, if we replace `simulate-blocking-workloads` with this naive implementation:
+
+```clojure
+(defn simulate-blocking-workloads
+  [n]
+  (let [threads (map #(Thread. (fn [] (Thread/sleep 1000)) (str "test-thread-" %)) (range n))]
+    (run! #(.start %) threads)
+    (run! #(.join  %) threads)))
+```
+
+The output becomes (on my machine - results will vary by run and machine):
+
+```clojure
+;; High job count
+Platform threads: 4214
+[562.278s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 2048k, guardsize: 16k, detached.
+[562.278s][warning][os,thread] Failed to start the native thread for java.lang.Thread "test-thread-9183"
+Execution error (OutOfMemoryError) at java.lang.Thread/start0 (Thread.java:-2).
+unable to create native thread: possibly out of memory or process/resource limits reached
+```
+
 ## Usage
 
 [API documentation is available here](https://pmonks.github.io/embroidery/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/embroidery/), and the [unit tests](https://github.com/pmonks/embroidery/blob/dev/test/embroidery/api_test.clj) are also worth perusing to see worked examples.
