@@ -37,6 +37,74 @@ $ lein try com.github.pmonks/embroidery
 $ deps-try com.github.pmonks/embroidery
 ```
 
+### Demo
+
+Let's use `Thread/sleep` as a reasonable facsimile of a blocking I/O workload.
+
+Setup:
+
+```clojure
+(require '[embroidery.api :as e])
+
+(defn blocking-workload [n] (doall (e/pmap* (fn [_] (Thread/sleep 1000)) (range n))))
+;=> #'user/blocking-workload
+
+(def cores (.availableProcessors (Runtime/getRuntime)))
+;=> #'user/cores
+```
+
+On JVMs that support virtual threads (note that the exact results will vary somewhat from run to run and machine to machine):
+
+```clojure
+;; First we run as many parallel jobs as there are CPU cores
+;; Note that exact results will vary from machine to machine
+(let [f (future (time (blocking-workload cores)))]
+  (Thread/sleep 250)
+  (println "Platform threads:" (count (Thread/getAllStackTraces)))
+  @f
+  nil)
+;=> Platform threads: 11
+;=> "Elapsed time: 1005.569084 msecs"
+;=> nil
+
+;; Then we run way more parallel jobs than there are CPU cores
+(let [f (future (time (blocking-workload (* 1000 cores))))]
+  (Thread/sleep 250)
+  (println "Platform threads:" (count (Thread/getAllStackTraces)))
+  @f
+  nil)
+;=> Platform threads: 22
+;=> "Elapsed time: 1027.093 msecs"
+;=> nil
+```
+
+On JVMs that don't support virtual threads (where embroidery falls back on using vanilla `clojure.core/pmap`):
+
+```clojure
+;; First we run as many parallel jobs as there are CPU cores
+;; Note that exact results will vary from machine to machine
+(let [f (future (time (blocking-workload cores)))]
+  (Thread/sleep 250)
+  (println "Platform threads:" (count (Thread/getAllStackTraces)))
+  @f
+  nil)
+;=> Platform threads: 20
+;=> "Elapsed time: 1009.354875 msecs"
+;=> nil
+
+;; Then we run way more parallel jobs than there are CPU cores
+(let [f (future (time (blocking-workload (* 1000 cores))))]
+  (Thread/sleep 250)
+  (println "Platform threads:" (count (Thread/getAllStackTraces)))
+  @f
+  nil)
+;=> Platform threads: 38
+;=> "Elapsed time: 440221.9605 msecs"
+;=> nil
+```
+
+While it could be argued that this is merely highlighting a limitation of `clojure.core/pmap`'s (i.e. its fixed size thread pool), the reality is that there are good reasons for it to be implemented that way, and the alternatives on JVMs without virtual threads (i.e. spinning up several thousand platform threads for this workload) have substantial downsides and likely still won't perform as well as virtual threads do.
+
 ## Usage
 
 [API documentation is available here](https://pmonks.github.io/embroidery/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/embroidery/), and the [unit tests](https://github.com/pmonks/embroidery/blob/dev/test/embroidery/api_test.clj) are also worth perusing to see worked examples.
@@ -51,7 +119,7 @@ $ deps-try com.github.pmonks/embroidery
 
 ### Developer Workflow
 
-This project uses the [git-flow branching strategy](https://nvie.com/posts/a-successful-git-branching-model/), and the permanent branches are called `release` and `dev`. Any changes to the `release` branch are considered a release and auto-deployed (JARs to Clojars, API docs to GitHub Pages, etc.).
+This project uses the [git-flow branching strategy](https://nvie.com/posts/a-successful-git-branching-model/), and the permanent branches are called `release` and `dev`.  Any changes to the `release` branch are considered a release and auto-deployed (JARs to Clojars, API docs to GitHub Pages, etc.).
 
 For this reason, **all development must occur either in branch `dev`, or (preferably) in temporary branches off of `dev`.**  All PRs from forked repos must also be submitted against `dev`; the `release` branch is **only** updated from `dev` via PRs created by the core development team.  All other changes submitted to `release` will be rejected.
 
