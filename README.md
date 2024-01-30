@@ -46,8 +46,8 @@ Setup:
 ```clojure
 (require '[embroidery.api :as e])
 
-(defn blocking-workload [n] (doall (e/pmap* (fn [_] (Thread/sleep 1000)) (range n))))
-;=> #'user/blocking-workload
+(defn simulate-blocking-workloads [n] (doall (e/pmap* (fn [_] (Thread/sleep 1000)) (range n))))
+;=> #'user/simulate-blocking-workloads
 
 (def cores (.availableProcessors (Runtime/getRuntime)))
 ;=> #'user/cores
@@ -57,7 +57,7 @@ On JVMs that support virtual threads (note that the exact results will vary some
 
 ```clojure
 ;; First we run as many parallel jobs as there are CPU cores, just as a baseline
-(let [f (future (time (blocking-workload cores)))]
+(let [f (future (time (simulate-blocking-workloads cores)))]
   (Thread/sleep 250)
   (println "Platform threads:" (count (Thread/getAllStackTraces)))
   @f
@@ -67,7 +67,7 @@ On JVMs that support virtual threads (note that the exact results will vary some
 ;=> nil
 
 ;; Then we run way more parallel jobs than there are CPU cores
-(let [f (future (time (blocking-workload (* 1000 cores))))]
+(let [f (future (time (simulate-blocking-workloads (* 1000 cores))))]
   (Thread/sleep 250)
   (println "Platform threads:" (count (Thread/getAllStackTraces)))
   @f
@@ -81,7 +81,7 @@ On JVMs that don't support virtual threads (where embroidery falls back on using
 
 ```clojure
 ;; First we run as many parallel jobs as there are CPU cores, just as a baseline
-(let [f (future (time (blocking-workload cores)))]
+(let [f (future (time (simulate-blocking-workloads cores)))]
   (Thread/sleep 250)
   (println "Platform threads:" (count (Thread/getAllStackTraces)))
   @f
@@ -91,7 +91,7 @@ On JVMs that don't support virtual threads (where embroidery falls back on using
 ;=> nil
 
 ;; Then we run way more parallel jobs than there are CPU cores
-(let [f (future (time (blocking-workload (* 1000 cores))))]
+(let [f (future (time (simulate-blocking-workloads (* 1000 cores))))]
   (Thread/sleep 250)
   (println "Platform threads:" (count (Thread/getAllStackTraces)))
   @f
