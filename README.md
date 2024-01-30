@@ -56,7 +56,7 @@ Setup:
 On JVMs that support virtual threads (note that the exact results will vary somewhat from run to run and machine to machine):
 
 ```clojure
-;; First we run as many parallel jobs as there are CPU cores
+;; First we run as many parallel jobs as there are CPU cores, just as a baseline
 (let [f (future (time (blocking-workload cores)))]
   (Thread/sleep 250)
   (println "Platform threads:" (count (Thread/getAllStackTraces)))
@@ -80,7 +80,7 @@ On JVMs that support virtual threads (note that the exact results will vary some
 On JVMs that don't support virtual threads (where embroidery falls back on using vanilla `clojure.core/pmap`):
 
 ```clojure
-;; First we run as many parallel jobs as there are CPU cores
+;; First we run as many parallel jobs as there are CPU cores, just as a baseline
 (let [f (future (time (blocking-workload cores)))]
   (Thread/sleep 250)
   (println "Platform threads:" (count (Thread/getAllStackTraces)))
