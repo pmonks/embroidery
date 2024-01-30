@@ -57,7 +57,6 @@ On JVMs that support virtual threads (note that the exact results will vary some
 
 ```clojure
 ;; First we run as many parallel jobs as there are CPU cores
-;; Note that exact results will vary from machine to machine
 (let [f (future (time (blocking-workload cores)))]
   (Thread/sleep 250)
   (println "Platform threads:" (count (Thread/getAllStackTraces)))
@@ -82,7 +81,6 @@ On JVMs that don't support virtual threads (where embroidery falls back on using
 
 ```clojure
 ;; First we run as many parallel jobs as there are CPU cores
-;; Note that exact results will vary from machine to machine
 (let [f (future (time (blocking-workload cores)))]
   (Thread/sleep 250)
   (println "Platform threads:" (count (Thread/getAllStackTraces)))
