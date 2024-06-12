@@ -18,7 +18,10 @@
 
 (in-ns 'embroidery.api)
 
-; Fallback on vanilla pmap
+(def virtual-threads-in-use?
+  "Are virtual threads in use on this JVM?"
+  false)
+
 (def pmap*
   "Version of [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
   which uses JVM 21+ virtual threads when available, one per item in `coll`.
@@ -50,7 +53,6 @@
   [_ f coll]
   (pmap f coll))
 
-; Fallback on vanilla future-call
 (def future-call*
   "Version of [future-call](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future-call)
   that uses JVM 21+ virtual threads when available.
@@ -61,7 +63,6 @@
     on JVMs that don't support virtual threads"
   future-call)
 
-; Fallback on vanilla future
 (defmacro future*
   "Version of [future](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future)
   which uses JVM 21+ virtual threads when available.
