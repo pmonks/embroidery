@@ -28,9 +28,14 @@
   (java.util.concurrent.Executors/newThreadPerTaskExecutor @embroidery-vthread-factory))
 
 (defn pmap*
-  "Version of clojure.core/pmap which uses JDK 21+ virtual threads when available.
+  "Version of [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
+  which uses JVM 21+ virtual threads when available, one per item in `coll`.
 
-Note: virtual thread version is _not_ lazy."
+  Notes:
+
+  * degrades to vanilla [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
+    on JVMs that don't support virtual threads
+  * virtual thread version is _not_ lazy"
   [f coll]
   (let [executor (new-vthread-executor)
         futures  (mapv #(.submit executor (reify java.util.concurrent.Callable (call [_] (f %)))) coll)
@@ -40,10 +45,37 @@ Note: virtual thread version is _not_ lazy."
       '()
       (seq ret))))
 
+(defn bounded-pmap*
+  "Version of [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
+  which uses JVM 21+ virtual threads when available, but will chunk the work up
+  such that at most `n` concurrent virtual threads will be used (useful for
+  workloads where system resource constraints could be exceeded e.g. maximum
+  number of open file handles).
+
+  Notes:
+
+  * degrades to vanilla [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
+    on JVMs that don't support virtual threads
+  * virtual thread version is partially lazy (results are computed eagerly, but
+    merged lazily using [concat](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/concat))
+  * non virtual thread version ignores the `n` argument (since [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
+    already chunks `coll`)
+  * each invocation of `bounded-pmap*` utilises an independent set of virtual
+    threads, so parallel invocations may exceed system resource constraints"
+  [n f coll]
+  (let [chunks (partition-all (int (Math/ceil (/ (count coll) n))) coll)]  ; clojure.math/ceil only added in Clojure 1.11
+    (apply concat (pmap* (partial map f) chunks))))
+
 (def ^:private future-vthread-executor (delay (new-vthread-executor)))
 
 (defn future-call*
-  "Version of clojure.core/future-call that uses JDK 21+ virtual threads when available."
+  "Version of [future-call](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future-call)
+  that uses JVM 21+ virtual threads when available.
+
+  Notes:
+
+  * degrades to vanilla [future-call](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future-call)
+    on JVMs that don't support virtual threads"
   [f]
   (let [f   ^clojure.lang.IFn (#'clojure.core/binding-conveyor-fn f)
         fut ^java.util.concurrent.Future (.submit ^java.util.concurrent.ExecutorService @future-vthread-executor ^Callable f)]
@@ -64,6 +96,12 @@ Note: virtual thread version is _not_ lazy."
       (cancel [_ interrupt?] (.cancel fut interrupt?)))))
 
 (defmacro future*
-  "Version of clojure.core/future which uses JDK 21+ virtual threads when available."
+  "Version of [future](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future)
+  which uses JVM 21+ virtual threads when available.
+
+  Notes:
+
+  * degrades to vanilla [future](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future)
+    on JVMs that don't support virtual threads"
   [& body]
   `(future-call* (^{:once true} fn* [] ~@body)))
