@@ -34,5 +34,6 @@
                                            :developer-connection "scm:git:ssh://git@github.com/pmonks/embroidery.git"
                                            :tag                  (tc/git-tag-or-hash)}
                         :issue-management {:system "github" :url "https://github.com/pmonks/embroidery/issues"}}
-         :codox        {:namespaces ['embroidery.api]}
+         :codox        {:namespaces ['embroidery.api]
+                        :metadata   {:doc/format :markdown}}
          :eastwood     {:exclude-linters [:unused-ret-vals-in-try :no-ns-form-found]}))

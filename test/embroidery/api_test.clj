@@ -18,7 +18,7 @@
 
 (ns embroidery.api-test
   (:require [clojure.test   :refer [deftest testing is]]
-            [embroidery.api :refer [pmap* future*]]))
+            [embroidery.api :refer [pmap* bounded-pmap* future*]]))
 
 (defn- valid=
   [expected actual]
@@ -37,6 +37,22 @@
     (is (valid= '(:a) (pmap* identity [:a])))
     (is (valid= '(:a) (pmap* identity '(:a))))
     (is (valid= '(1 2 3 4 5 6 7 8 9 10) (pmap* inc (range 10))))))
+
+(deftest bounded-pmap*-tests
+  (testing "nil, empty input"
+    (is (valid= '() (bounded-pmap* 1 nil nil)))
+    (is (valid= '() (bounded-pmap* 2 nil '())))
+    (is (valid= '() (bounded-pmap* 3 nil [])))
+    (is (valid= '() (bounded-pmap* 4 identity nil)))
+    (is (valid= '() (bounded-pmap* 5 identity '())))
+    (is (valid= '() (bounded-pmap* 6 identity []))))
+  (testing "non-empty input"
+    (is (valid= '(:a) (bounded-pmap* 100 identity [:a])))
+    (is (valid= '(:a) (bounded-pmap* 100 identity '(:a))))
+    (is (valid= '(1 2 3 4 5 6 7 8 9 10) (bounded-pmap* 1     inc (range 10))))
+    (is (valid= '(1 2 3 4 5 6 7 8 9 10) (bounded-pmap* 3     inc (range 10))))
+    (is (valid= '(1 2 3 4 5 6 7 8 9 10) (bounded-pmap* 10    inc (range 10))))
+    (is (valid= '(1 2 3 4 5 6 7 8 9 10) (bounded-pmap* 10000 inc (range 10))))))
 
 (deftest future*-tests
   (testing "empty input"

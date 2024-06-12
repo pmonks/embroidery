@@ -20,18 +20,55 @@
 
 ; Fallback on vanilla pmap
 (def pmap*
-  "Version of clojure.core/pmap which uses JDK 21+ virtual threads when available.
+  "Version of [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
+  which uses JVM 21+ virtual threads when available, one per item in `coll`.
 
-Note: virtual thread version is _not_ lazy."
-     pmap)
+  Notes:
+
+  * degrades to vanilla [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
+    on JVMs that don't support virtual threads
+  * virtual thread version is _not_ lazy"
+  pmap)
+
+(defn bounded-pmap*
+  "Version of [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
+  which uses JVM 21+ virtual threads when available, but will chunk the work up
+  such that at most `n` concurrent virtual threads will be used (useful for
+  workloads where system resource constraints could be exceeded e.g. maximum
+  number of open file handles).
+
+  Notes:
+
+  * degrades to vanilla [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
+    on JVMs that don't support virtual threads
+  * virtual thread version is partially lazy (results are computed eagerly, but
+    merged lazily using [concat](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/concat))
+  * non virtual thread version ignores the `n` argument (since [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
+    already chunks `coll`)
+  * each invocation of `bounded-pmap*` utilises an independent set of virtual
+    threads, so parallel invocations may exceed system resource constraints"
+  [_ f coll]
+  (pmap f coll))
 
 ; Fallback on vanilla future-call
 (def future-call*
-  "Version of clojure.core/future-call that uses JDK 21+ virtual threads when available."
+  "Version of [future-call](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future-call)
+  that uses JVM 21+ virtual threads when available.
+
+  Notes:
+
+  * degrades to vanilla [future-call](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future-call)
+    on JVMs that don't support virtual threads"
   future-call)
 
 ; Fallback on vanilla future
 (defmacro future*
-  "Version of clojure.core/future which uses JDK 21+ virtual threads when available."
+  "Version of [future](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future)
+  which uses JVM 21+ virtual threads when available.
+
+  Notes:
+
+  * degrades to vanilla [future](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future)
+    on JVMs that don't support virtual threads"
   [& body]
   `(future ~@body))
