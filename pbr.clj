@@ -21,7 +21,7 @@
   [opts]
   (assoc opts
          :lib          'com.github.pmonks/embroidery
-         :version      (pbr/calculate-version 0 1)
+         :version      (pbr/calculate-version 1 0)
          :prod-branch  "release"
          :write-pom    true
          :validate-pom true
