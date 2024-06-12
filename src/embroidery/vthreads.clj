@@ -18,6 +18,10 @@
 
 (in-ns 'embroidery.api)
 
+(def virtual-threads-in-use?
+  "Are virtual threads in use on this JVM?"
+  true)
+
 (def ^:private embroidery-vthread-factory (delay (-> (Thread/ofVirtual)
                                                      (.name "embroidery-virtual-thread-" 0)
                                                      (.factory))))
@@ -38,8 +42,8 @@
   * virtual thread version is _not_ lazy"
   [f coll]
   (let [executor (new-vthread-executor)
-        futures  (mapv #(.submit executor (reify java.util.concurrent.Callable (call [_] (f %)))) coll)
-        ret      (mapv #(.get ^java.util.concurrent.Future %) futures)]
+        futures  (doall (mapv #(.submit executor (reify java.util.concurrent.Callable (call [_] (f %)))) coll))
+        ret      (doall (mapv #(.get ^java.util.concurrent.Future %) futures))]
     (.shutdownNow executor)
     (if (empty? ret)
       '()
@@ -63,8 +67,9 @@
   * each invocation of `bounded-pmap*` utilises an independent set of virtual
     threads, so parallel invocations may exceed system resource constraints"
   [n f coll]
-  (let [chunks (partition-all (int (Math/ceil (/ (count coll) n))) coll)]  ; clojure.math/ceil only added in Clojure 1.11
-    (apply concat (pmap* (partial map f) chunks))))
+  (let [chunk-size (max 1 (int (Math/ceil (/ (count coll) n))))  ; clojure.math/ceil only added in Clojure 1.11
+        chunks     (partition-all chunk-size coll)]
+    (apply concat (pmap* #(doall (map f %)) chunks))))
 
 (def ^:private future-vthread-executor (delay (new-vthread-executor)))
 
