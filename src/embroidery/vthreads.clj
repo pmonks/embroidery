@@ -42,12 +42,10 @@
   * virtual thread version is _not_ lazy"
   [f coll]
   (let [executor (new-vthread-executor)
-        futures  (doall (mapv #(.submit executor (reify java.util.concurrent.Callable (call [_] (f %)))) coll))
-        ret      (doall (mapv #(.get ^java.util.concurrent.Future %) futures))]
+        futures  (mapv #(.submit executor (reify java.util.concurrent.Callable (call [_] (f %)))) coll)
+        ret      (mapv #(.get ^java.util.concurrent.Future %) futures)]
     (.shutdownNow executor)
-    (if (empty? ret)
-      '()
-      (seq ret))))
+    (sequence ret)))   ; Note: we don't use `seq` here, since we don't want nil punning when `ret` is empty
 
 (defn bounded-pmap*
   "Version of [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
@@ -63,13 +61,14 @@
   * virtual thread version is partially lazy (results are computed eagerly, but
     merged lazily using [concat](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/concat))
   * non virtual thread version ignores the `n` argument (since [pmap](https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap)
-    already chunks `coll`)
+    chunks `coll` itself, based on the number of CPUs)
   * each invocation of `bounded-pmap*` utilises an independent set of virtual
     threads, so parallel invocations may exceed system resource constraints"
   [n f coll]
   (let [chunk-size (max 1 (int (Math/ceil (/ (count coll) n))))  ; clojure.math/ceil only added in Clojure 1.11
-        chunks     (partition-all chunk-size coll)]
-    (apply concat (pmap* #(doall (map f %)) chunks))))
+        chunks     (partition-all chunk-size coll)
+        results    (pmap* #(mapv f %) chunks)]
+    (apply concat results)))
 
 (def ^:private future-vthread-executor (delay (new-vthread-executor)))
 
