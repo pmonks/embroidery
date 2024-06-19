@@ -5,20 +5,20 @@
 <ul>
 <li>degrades to vanilla <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap">pmap</a> on JVMs that don’t support virtual threads</li>
 <li>virtual thread version is partially lazy (results are computed eagerly, but merged lazily using <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/concat">concat</a>)</li>
-<li>non virtual thread version ignores the <code>n</code> argument (since <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap">pmap</a> already chunks <code>coll</code>)</li>
+<li>non virtual thread version ignores the <code>n</code> argument (since <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap">pmap</a> chunks <code>coll</code> itself, based on the number of CPUs)</li>
 <li>each invocation of <code>bounded-pmap*</code> utilises an independent set of virtual threads, so parallel invocations may exceed system resource constraints</li>
 </ul>
-</div></div><div class="src-link"><a href="https://github.com/pmonks/embroidery/blob/release/src/embroidery/vthreads.clj#L52">view source</a></div></div><div class="public anchor" id="var-future*"><h3>future*</h3><h4 class="type">macro</h4><div class="usage"><code>(future* &amp; body)</code></div><div class="doc"><div class="markdown"><p>Version of <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future">future</a> which uses JVM 21+ virtual threads when available.</p>
+</div></div><div class="src-link"><a href="https://github.com/pmonks/embroidery/blob/release/src/embroidery/vthreads.clj#L50">view source</a></div></div><div class="public anchor" id="var-future*"><h3>future*</h3><h4 class="type">macro</h4><div class="usage"><code>(future* &amp; body)</code></div><div class="doc"><div class="markdown"><p>Version of <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future">future</a> which uses JVM 21+ virtual threads when available.</p>
 <p>Notes:</p>
 <ul>
 <li>degrades to vanilla <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future">future</a> on JVMs that don’t support virtual threads</li>
 </ul>
-</div></div><div class="src-link"><a href="https://github.com/pmonks/embroidery/blob/release/src/embroidery/vthreads.clj#L103">view source</a></div></div><div class="public anchor" id="var-future-call*"><h3>future-call*</h3><div class="usage"><code>(future-call* f)</code></div><div class="doc"><div class="markdown"><p>Version of <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future-call">future-call</a> that uses JVM 21+ virtual threads when available.</p>
+</div></div><div class="src-link"><a href="https://github.com/pmonks/embroidery/blob/release/src/embroidery/vthreads.clj#L102">view source</a></div></div><div class="public anchor" id="var-future-call*"><h3>future-call*</h3><div class="usage"><code>(future-call* f)</code></div><div class="doc"><div class="markdown"><p>Version of <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future-call">future-call</a> that uses JVM 21+ virtual threads when available.</p>
 <p>Notes:</p>
 <ul>
 <li>degrades to vanilla <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/future-call">future-call</a> on JVMs that don’t support virtual threads</li>
 </ul>
-</div></div><div class="src-link"><a href="https://github.com/pmonks/embroidery/blob/release/src/embroidery/vthreads.clj#L76">view source</a></div></div><div class="public anchor" id="var-pmap*"><h3>pmap*</h3><div class="usage"><code>(pmap* f coll)</code></div><div class="doc"><div class="markdown"><p>Version of <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap">pmap</a> which uses JVM 21+ virtual threads when available, one per item in <code>coll</code>.</p>
+</div></div><div class="src-link"><a href="https://github.com/pmonks/embroidery/blob/release/src/embroidery/vthreads.clj#L75">view source</a></div></div><div class="public anchor" id="var-pmap*"><h3>pmap*</h3><div class="usage"><code>(pmap* f coll)</code></div><div class="doc"><div class="markdown"><p>Version of <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap">pmap</a> which uses JVM 21+ virtual threads when available, one per item in <code>coll</code>.</p>
 <p>Notes:</p>
 <ul>
 <li>degrades to vanilla <a href="https://clojure.github.io/clojure/clojure.core-api.html#clojure.core/pmap">pmap</a> on JVMs that don’t support virtual threads</li>
