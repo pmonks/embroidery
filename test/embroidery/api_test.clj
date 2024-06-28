@@ -31,11 +31,14 @@
 
 (def alphabet [:a :b :c :d :e :f :g :h :i :j :k :l :m :n :o :p :q :r :s :t :u :v :w :x :y :z])
 
-(defn- now-ms
+; How much overhead we allow for vthread management in the performance tests, in milliseconds
+(def allowed-vthread-overhead-ms 100)
+
+(defn now-ms
   []
   (System/currentTimeMillis))
 
-(defn- time-fn
+(defn time-fn
   "Runs f, returning how long (in ms) it took to execute. The results of f are
   discarded, so it should internally de-lazy any lazy results if those need to
   be realised in order to determine an accurate runtime."
@@ -44,7 +47,7 @@
     (f)
     (- (now-ms) start)))
 
-(defn- slow-identity
+(defn slow-identity
   "clojure.core/identity, but takes ~100ms"
   [x]
   (Thread/sleep 100)
@@ -64,8 +67,8 @@
     (is (valid= '(1 2 3 4 5 6 7 8 9 10) (pmap* inc (range 10)))))
   (when virtual-threads-in-use?
     (testing "virtual thread run times"
-      (is (<= (time-fn #(doall (pmap* slow-identity alphabet))) 200))          ; This should run in 100ms + vthread overhead
-      (is (<= (time-fn #(doall (pmap* slow-identity (range 10000)))) 200)))))  ; This should also run in 100ms + vthread overhead
+      (is (<= (time-fn #(doall (pmap* slow-identity alphabet)))      (+ 100 allowed-vthread-overhead-ms)))
+      (is (<= (time-fn #(doall (pmap* slow-identity (range 10000)))) (+ 100 allowed-vthread-overhead-ms))))))
 
 (deftest bounded-pmap*-tests
   (testing "nil, empty input"
@@ -85,10 +88,10 @@
     (is (valid= '([:a] [:b])            (bounded-pmap* 100   #(identity [%]) [:a :b]))))
   (when virtual-threads-in-use?
     (testing "virtual thread run times"
-      (is (<= (time-fn #(doall (bounded-pmap*   26 slow-identity alphabet)))       200))     ; This should run in 100ms + vthread overhead
-      (is (<= (time-fn #(doall (bounded-pmap*   13 slow-identity alphabet)))       300))     ; This should run in 200ms + vthread overhead
-      (is (<= (time-fn #(doall (bounded-pmap*    7 slow-identity alphabet)))       500))     ; This should run in 400ms + vthread overhead
-      (is (<= (time-fn #(doall (bounded-pmap* 1000 slow-identity (range 10000)))) 1100)))))  ; This should run in 1000ms + vthread overhead
+      (is (<= (time-fn #(doall (bounded-pmap*   26 slow-identity alphabet)))      (+  100 allowed-vthread-overhead-ms)))
+      (is (<= (time-fn #(doall (bounded-pmap*   13 slow-identity alphabet)))      (+  200 allowed-vthread-overhead-ms)))
+      (is (<= (time-fn #(doall (bounded-pmap*    7 slow-identity alphabet)))      (+  400 allowed-vthread-overhead-ms)))
+      (is (<= (time-fn #(doall (bounded-pmap* 1000 slow-identity (range 10000)))) (+ 1000 allowed-vthread-overhead-ms))))))
 
 (deftest future*-tests
   (testing "empty input"
