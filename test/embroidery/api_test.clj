@@ -88,7 +88,7 @@
       (is (<= (time-fn #(doall (bounded-pmap*   26 slow-identity alphabet)))       200))     ; This should run in 100ms + vthread overhead
       (is (<= (time-fn #(doall (bounded-pmap*   13 slow-identity alphabet)))       300))     ; This should run in 200ms + vthread overhead
       (is (<= (time-fn #(doall (bounded-pmap*    7 slow-identity alphabet)))       500))     ; This should run in 400ms + vthread overhead
-      (is (<= (time-fn #(doall (bounded-pmap* 1000 slow-identity (range 10000)))) 2000)))))  ; This should run in 1000ms + vthread overhead
+      (is (<= (time-fn #(doall (bounded-pmap* 1000 slow-identity (range 10000)))) 1100)))))  ; This should run in 1000ms + vthread overhead
 
 (deftest future*-tests
   (testing "empty input"
