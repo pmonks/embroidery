@@ -11,7 +11,11 @@
 
 A micro-library for Clojure that provides versions of `pmap` and `future` that have first class support for virtual threads on JVMs that support them, and which transparently falls back on Clojure core `pmap` and `future` when virtual threads are not supported.  These features are opt-in; this library does _not_ monkey patch core Clojure or mess with the thread pools etc. that it sets up.  It has no dependencies, other than on Clojure and any supported JVM, and is [less than 100 lines of code](https://github.com/pmonks/embroidery/tree/dev/src/embroidery).
 
-Note that Clojure versions prior to 1.12 use `synchronized` blocks in the language and core library, which will reduce performance since that construct pins virtual threads to platform threads (see [JEP-444](https://openjdk.org/jeps/444) and search for the first occurrence of the word "synchronized" for details).  Despite this, performance for I/O bound workloads that leverage virtual threads can be substantially better than the same workload running on platform threads, even on older Clojure versions.
+Note that Clojure versions prior to 1.12 use `synchronized` blocks in the language and core library, which will reduce performance on JVMs < v24, since that construct pins virtual threads to platform threads (see [JEP-444](https://openjdk.org/jeps/444) and search for the first occurrence of the word "synchronized" for details, and see also [JEP-491](https://openjdk.org/jeps/491)).  Despite this, performance for I/O bound workloads that leverage virtual threads can be substantially better than the same workload running on platform threads, even on older Clojure and/or JVM versions.
+
+#### What if I want to use virtual threads with core.async?
+
+srasu's [Spindle project](https://git.sr.ht/~srasu/spindle/tree/master/item/README.md) does this, albeit by monkey patching core.async.
 
 ## Installation
 
