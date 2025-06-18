@@ -1,13 +1,15 @@
-| | | |
-|---:|:---:|:---:|
-| [**release**](https://github.com/pmonks/embroidery/tree/release) | [![CI](https://github.com/pmonks/embroidery/actions/workflows/ci.yml/badge.svg?branch=release)](https://github.com/pmonks/embroidery/actions?query=workflow%3ACI+branch%3Arelease) | [![Dependencies](https://github.com/pmonks/embroidery/actions/workflows/dependencies.yml/badge.svg?branch=release)](https://github.com/pmonks/embroidery/actions?query=workflow%3Adependencies+branch%3Arelease) |
-| [**dev**](https://github.com/pmonks/embroidery/tree/dev)  | [![CI](https://github.com/pmonks/embroidery/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/pmonks/embroidery/actions?query=workflow%3ACI+branch%3Adev) | [![Dependencies](https://github.com/pmonks/embroidery/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/embroidery/actions?query=workflow%3Adependencies+branch%3Adev) |
-
-[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/embroidery)](https://clojars.org/com.github.pmonks/embroidery/) [![Open Issues](https://img.shields.io/github/issues/pmonks/embroidery.svg)](https://github.com/pmonks/embroidery/issues) [![License](https://img.shields.io/github/license/pmonks/embroidery.svg)](https://github.com/pmonks/embroidery/blob/dev/LICENSE) [![Vulnerabilities](https://github.com/pmonks/embroidery/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://pmonks.github.io/embroidery/nvd/dependency-check-report.html)
-
 <img alt="embroidery logo: a cross stitch rendition of the Clojure logo" align="right" width="25%" src="embroidery-logo.png">
 
 # embroidery
+
+[![CI](https://github.com/pmonks/embroidery/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/pmonks/embroidery/actions?query=workflow%3ACI+branch%3Adev)
+[![Dependencies](https://github.com/pmonks/embroidery/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/embroidery/actions?query=workflow%3Adependencies+branch%3Adev)
+[![Vulnerabilities](https://github.com/pmonks/embroidery/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://pmonks.github.io/embroidery/nvd/dependency-check-report.html)
+<br/>
+[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/embroidery)](https://clojars.org/com.github.pmonks/embroidery/)
+[![Open Issues](https://img.shields.io/github/issues/pmonks/embroidery.svg)](https://github.com/pmonks/embroidery/issues)
+[![License](https://img.shields.io/github/license/pmonks/embroidery.svg)](https://github.com/pmonks/embroidery/blob/dev/LICENSE)
+![Maintained](https://badges.ws/badge/?label=maintained&value=yes,+at+author's+discretion)
 
 A micro-library for Clojure that provides versions of `pmap` and `future` that have first class support for virtual threads on JVMs that support them, and which transparently falls back on Clojure core `pmap` and `future` when virtual threads are not supported.  These features are opt-in; this library does _not_ monkey patch core Clojure or mess with the thread pools etc. that it sets up.  It has no dependencies, other than on Clojure and any supported JVM, and is [less than 100 lines of code](https://github.com/pmonks/embroidery/tree/dev/src/embroidery).
 
