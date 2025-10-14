@@ -1,70 +1,71 @@
 Downloading: nvd-clojure/nvd-clojure/maven-metadata.xml from clojars
-[2025-10-07 02:52:34.662] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "embroidery", :version "1.0.56-SNAPSHOT", :nvd {:output-dir "../target/nvd"}}
-Oct 07, 2025 2:52:34 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+[2025-10-14 02:55:24.417] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "embroidery", :version "1.0.57-SNAPSHOT", :nvd {:output-dir "../target/nvd"}}
+Oct 14, 2025 2:55:24 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: Instance is null, returning unconfigured instance
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: Setting default auxiliaries to "ODC"
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: setting defaultCompositeCacheAttributes to [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
-INFO: setting defaultElementAttributes to [ IS_LATERAL = false, IS_SPOOL = true, IS_REMOTE = false, IS_ETERNAL = false, MaxLifeSeconds = 86400, IdleTime = 1800, CreateTime = 1759805556578, LastAccessTime = 1759805556578, getTimeToLiveSeconds() = 86399, createTime = 1759805556578 ]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+INFO: setting defaultElementAttributes to [ IS_LATERAL = false, IS_SPOOL = true, IS_REMOTE = false, IS_ETERNAL = false, MaxLifeSeconds = 86400, IdleTime = 1800, CreateTime = 1760410525797, LastAccessTime = 1760410525797, getTimeToLiveSeconds() = 86399, createTime = 1760410525797 ]
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for CENTRAL
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [CENTRAL] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
-INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@3f857e08] for auxiliary [jcs.auxiliary.ODC]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@4017fe2c] for auxiliary [jcs.auxiliary.ODC]
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Set maxKeySize to: "1,000,000"
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/12.1.6/data/11.0/cache
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Indexed Disk Cache is alive.
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for POM
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [POM] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
-INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@3e28d779] for auxiliary [jcs.auxiliary.ODC]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@31834a2b] for auxiliary [jcs.auxiliary.ODC]
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Set maxKeySize to: "1,000,000"
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/12.1.6/data/11.0/cache
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Indexed Disk Cache is alive.
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for NODEAUDIT
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [NODEAUDIT] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
-INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@15214920] for auxiliary [jcs.auxiliary.ODC]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@44f0ff2b] for auxiliary [jcs.auxiliary.ODC]
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Set maxKeySize to: "1,000,000"
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/12.1.6/data/11.0/cache
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Indexed Disk Cache is alive.
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.engine.control.CompositeCacheConfigurator 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.engine.control.CompositeCacheConfigurator 
 INFO: Parsed regions [CENTRAL, POM, NODEAUDIT]
-Oct 07, 2025 2:52:36 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
-INFO: Finished configuration in 258 ms.
-[2025-10-07 02:52:36.622] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
-[2025-10-07 02:52:37.288] INFO Engine - Checking for updates
-[2025-10-07 02:52:39.471] INFO NvdApiDataSource - NVD API has 3,257 records in this update
-[2025-10-07 02:52:43.262] INFO NvdApiDataSource - Downloaded 3,257/3,257 (100%)
-[2025-10-07 02:52:43.263] INFO NvdApiDataSource - Completed processing batch 1/2 (50%) in 1,561ms
-[2025-10-07 02:52:43.526] INFO NvdApiDataSource - Completed processing batch 2/2 (100%) in 309ms
-[2025-10-07 02:52:43.701] INFO KnownExploitedDataSource - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
-[2025-10-07 02:52:44.114] INFO CveDB - Begin database defrag
-[2025-10-07 02:52:49.331] INFO CveDB - End database defrag (5220 ms)
-[2025-10-07 02:52:49.333] INFO Engine - Check for updates complete (12044 ms)
-[2025-10-07 02:52:49.520] INFO Engine - 
+Oct 14, 2025 2:55:25 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+INFO: Finished configuration in 175 ms.
+[2025-10-14 02:55:25.845] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
+[2025-10-14 02:55:26.548] INFO Engine - Checking for updates
+[2025-10-14 02:55:29.769] INFO NvdApiDataSource - NVD API has 4,771 records in this update
+[2025-10-14 02:55:33.460] INFO NvdApiDataSource - Downloaded 4,771/4,771 (100%)
+[2025-10-14 02:55:33.460] INFO NvdApiDataSource - Completed processing batch 1/3 (33%) in 1,807ms
+[2025-10-14 02:55:33.460] INFO NvdApiDataSource - Completed processing batch 2/3 (67%) in 386ms
+[2025-10-14 02:55:34.323] INFO NvdApiDataSource - Completed processing batch 3/3 (100%) in 904ms
+[2025-10-14 02:55:34.454] INFO KnownExploitedDataSource - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+[2025-10-14 02:55:34.706] INFO CveDB - Begin database defrag
+[2025-10-14 02:55:39.665] INFO CveDB - End database defrag (4962 ms)
+[2025-10-14 02:55:39.666] INFO Engine - Check for updates complete (13118 ms)
+[2025-10-14 02:55:39.848] INFO Engine - 
 
 Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user's risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.
 
@@ -75,47 +76,42 @@ Dependency-Check is an open source tool performing a best effort analysis of 3rd
 💖 Sponsor: https://github.com/sponsors/jeremylong
 
 
-[2025-10-07 02:52:49.521] INFO Engine - Analysis Started
-[2025-10-07 02:52:49.682] INFO Engine - Finished Archive Analyzer (0 seconds)
-[2025-10-07 02:52:49.687] INFO Engine - Finished File Name Analyzer (0 seconds)
-[2025-10-07 02:52:50.275] INFO Engine - Finished Jar Analyzer (0 seconds)
-[2025-10-07 02:52:50.286] INFO Engine - Finished Central Analyzer (0 seconds)
-[2025-10-07 02:52:50.287] INFO Engine - Finished Dependency Merging Analyzer (0 seconds)
-[2025-10-07 02:52:50.709] INFO Engine - Finished Hint Analyzer (0 seconds)
-[2025-10-07 02:52:50.710] INFO Engine - Finished Version Filter Analyzer (0 seconds)
+[2025-10-14 02:55:39.848] INFO Engine - Analysis Started
+[2025-10-14 02:55:39.972] INFO Engine - Finished Archive Analyzer (0 seconds)
+[2025-10-14 02:55:39.978] INFO Engine - Finished File Name Analyzer (0 seconds)
+[2025-10-14 02:55:40.386] INFO Engine - Finished Jar Analyzer (0 seconds)
+[2025-10-14 02:55:40.388] INFO Engine - Finished Central Analyzer (0 seconds)
+[2025-10-14 02:55:40.389] INFO Engine - Finished Dependency Merging Analyzer (0 seconds)
+[2025-10-14 02:55:40.780] INFO Engine - Finished Hint Analyzer (0 seconds)
+[2025-10-14 02:55:40.782] INFO Engine - Finished Version Filter Analyzer (0 seconds)
 WARNING: A restricted method in java.lang.foreign.Linker has been called
-WARNING: java.lang.foreign.Linker::downcallHandle has been called by the unnamed module
-WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for this module
+WARNING: java.lang.foreign.Linker::downcallHandle has been called by org.apache.lucene.store.PosixNativeAccess in an unnamed module (file:/home/runner/.m2/repository/org/apache/lucene/lucene-core/9.12.0/lucene-core-9.12.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
 
-Oct 07, 2025 2:52:52 AM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+Oct 14, 2025 2:55:41 AM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
 INFO: Using MemorySegmentIndexInput and native madvise support with Java 21 or later; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
-Oct 07, 2025 2:52:52 AM org.apache.lucene.internal.vectorization.VectorizationProvider lookup
-WARNING: Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
-[2025-10-07 02:52:53.875] INFO CPEAnalyzer - Created CPE Index (3 seconds)
-[2025-10-07 02:52:54.254] INFO Engine - Finished CPE Analyzer (3 seconds)
-[2025-10-07 02:52:54.256] INFO Engine - Finished False Positive Analyzer (0 seconds)
-[2025-10-07 02:52:54.264] INFO Engine - Finished NVD CVE Analyzer (0 seconds)
-[2025-10-07 02:52:54.264] WARN OssIndexAnalyzer - Disabling OSS Index analyzer due to missing user/password credentials. Authentication is now required: https://ossindex.sonatype.org/doc/auth-required
-[2025-10-07 02:52:54.265] INFO Engine - Finished Vulnerability Suppression Analyzer (0 seconds)
-[2025-10-07 02:52:54.300] INFO Engine - Finished Known Exploited Vulnerability Analyzer (0 seconds)
-[2025-10-07 02:52:54.301] INFO Engine - Finished Dependency Bundling Analyzer (0 seconds)
-[2025-10-07 02:52:54.304] INFO Engine - Finished Unused Suppression Rule Analyzer (0 seconds)
-[2025-10-07 02:52:54.325] INFO Engine - Analysis Complete (4 seconds)
-[2025-10-07 02:52:54.363] INFO ReportGenerator - Writing XML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.xml
-[2025-10-07 02:52:54.495] INFO ReportGenerator - Writing HTML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.html
-[2025-10-07 02:52:54.575] INFO ReportGenerator - Writing JSON report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.json
-[2025-10-07 02:52:54.610] INFO ReportGenerator - Writing CSV report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.csv
-[2025-10-07 02:52:54.613] INFO ReportGenerator - Writing SARIF report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.sarif
-[2025-10-07 02:52:54.622] INFO ReportGenerator - Writing JENKINS report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-jenkins.html
-[2025-10-07 02:52:54.638] INFO ReportGenerator - Writing JUNIT report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-junit.xml
-[2025-10-07 02:52:54.651] INFO ReportGenerator - Writing GITLAB report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-gitlab.json
-Oct 07, 2025 2:52:54 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+Oct 14, 2025 2:55:41 AM org.apache.lucene.internal.vectorization.VectorizationProvider lookup
+WARNING: You are running with Java 23 or later. To make full use of the Vector API, please update Apache Lucene.
+[2025-10-14 02:55:43.181] INFO CPEAnalyzer - Created CPE Index (2 seconds)
+[2025-10-14 02:55:43.579] INFO Engine - Finished CPE Analyzer (2 seconds)
+[2025-10-14 02:55:43.582] INFO Engine - Finished False Positive Analyzer (0 seconds)
+[2025-10-14 02:55:43.592] INFO Engine - Finished NVD CVE Analyzer (0 seconds)
+[2025-10-14 02:55:43.592] WARN OssIndexAnalyzer - Disabling OSS Index analyzer due to missing user/password credentials. Authentication is now required: https://ossindex.sonatype.org/doc/auth-required
+[2025-10-14 02:55:43.593] INFO Engine - Finished Vulnerability Suppression Analyzer (0 seconds)
+[2025-10-14 02:55:43.607] INFO Engine - Finished Known Exploited Vulnerability Analyzer (0 seconds)
+[2025-10-14 02:55:43.608] INFO Engine - Finished Dependency Bundling Analyzer (0 seconds)
+[2025-10-14 02:55:43.609] INFO Engine - Finished Unused Suppression Rule Analyzer (0 seconds)
+[2025-10-14 02:55:43.630] INFO Engine - Analysis Complete (3 seconds)
+[2025-10-14 02:55:43.679] INFO ReportGenerator - Writing XML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.xml
+[2025-10-14 02:55:43.804] INFO ReportGenerator - Writing HTML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.html
+[2025-10-14 02:55:43.884] INFO ReportGenerator - Writing JSON report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.json
+[2025-10-14 02:55:43.916] INFO ReportGenerator - Writing CSV report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.csv
+[2025-10-14 02:55:43.918] INFO ReportGenerator - Writing SARIF report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.sarif
+[2025-10-14 02:55:43.928] INFO ReportGenerator - Writing JENKINS report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-jenkins.html
+[2025-10-14 02:55:43.942] INFO ReportGenerator - Writing JUNIT report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-junit.xml
+[2025-10-14 02:55:43.954] INFO ReportGenerator - Writing GITLAB report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-gitlab.json
+Oct 14, 2025 2:55:43 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: Shutdown hook activated. Shutdown was not called. Shutting down JCS.
-Oct 07, 2025 2:52:54 AM org.apache.commons.jcs3.engine.control.event.ElementEventQueue 
-INFO: Element event queue destroyed: org.apache.commons.jcs3.engine.control.event.ElementEventQueue@75347309
-Oct 07, 2025 2:52:54 AM org.apache.commons.jcs3.engine.control.CompositeCache 
-INFO: In DISPOSE, [NODEAUDIT] fromRemote [false]
-Oct 07, 2025 2:52:54 AM org.apache.commons.jcs3.engine.control.CompositeCache 
-INFO: In DISPOSE, [NODEAUDIT] auxiliary [NODEAUDIT]
-Oct 07, 2025 2:52:54 AM org.apache.commons.jcs3.engine.control.CompositeCache 
-INFO: In DISPOSE, [NODEAUDIT] put 0 into auxiliary [NODEAUDIT]
+Oct 14, 2025 2:55:43 AM org.apache.commons.jcs3.engine.control.event.ElementEventQueue 
+INFO: Element event queue destroyed: org.apache.commons.jcs3.engine.control.event.ElementEventQueue@66f8d02
