@@ -17,7 +17,11 @@ Note that Clojure versions prior to 1.12 use `synchronized` blocks in the langua
 
 #### What if I want to use virtual threads with core.async?
 
-srasu's [Spindle project](https://git.sr.ht/~srasu/spindle/tree/master/item/README.md) does this, albeit by monkey patching core.async.
+[`srasu/spindle`](https://git.sr.ht/~srasu/spindle/tree/master/item/README.md) does this, albeit by monkey patching core.async.  Rumour has it that Clojure v1.13 updates core.async to support virtual threads too.
+
+#### What if I want to share state between virtual threads, using ScopedValues?
+
+Check out [`multiplyco/scoped`](https://github.com/multiplyco/scoped). It should pair nicely with `embroidery`, and has similar graceful degradation behaviour on older JVMs.
 
 ## Installation
 
