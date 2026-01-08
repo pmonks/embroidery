@@ -27,6 +27,10 @@ Check out [`multiplyco/scoped`](https://github.com/multiplyco/scoped). It should
 
 `embroidery` is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/embroidery).
 
+### API Documentation
+
+[API documentation is available here](https://pmonks.github.io/embroidery/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/embroidery/), and the [unit tests](https://github.com/pmonks/embroidery/blob/dev/test/embroidery/api_test.clj) are also worth perusing to see worked examples.
+
 ### Trying it Out
 
 #### Clojure CLI
@@ -123,10 +127,6 @@ Platform threads: 4214
 Execution error (OutOfMemoryError) at java.lang.Thread/start0 (Thread.java:-2).
 unable to create native thread: possibly out of memory or process/resource limits reached
 ```
-
-## Usage
-
-[API documentation is available here](https://pmonks.github.io/embroidery/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/embroidery/), and the [unit tests](https://github.com/pmonks/embroidery/blob/dev/test/embroidery/api_test.clj) are also worth perusing to see worked examples.
 
 ## Contributor Information
 
