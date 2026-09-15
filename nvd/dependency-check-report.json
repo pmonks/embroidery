@@ -5,19 +5,19 @@
         "dataSource": [
 {
                 "name": "NVD API Last Checked",
-                "timestamp": "2026-09-08T06:44:47Z"
+                "timestamp": "2026-09-15T07:02:42Z"
             }
 ,{
                 "name": "NVD API Last Modified",
-                "timestamp": "2026-09-08T06:17:20Z"
+                "timestamp": "2026-09-15T06:17:01Z"
             }
         ]
 
 
     },
     "projectInfo": {
-        "name": "com.github.pmonks\/embroidery 1.0.67-SNAPSHOT",
-        "reportDate": "2026-09-08T06:44:56.870550716Z",
+        "name": "com.github.pmonks\/embroidery 1.0.68-SNAPSHOT",
+        "reportDate": "2026-09-15T07:02:51.227692445Z",
         "credits": {
             "NVD": "This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov",
             "CISA": "This report may contain data retrieved from the CISA Known Exploited Vulnerability Catalog: https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
