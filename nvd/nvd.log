@@ -1,28 +1,41 @@
 Downloading: nvd-clojure/nvd-clojure/maven-metadata.xml from clojars
-[2026-10-13 08:41:56.234] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "embroidery", :version "1.0.68-SNAPSHOT", :nvd {:output-dir "../target/nvd"}}
-[2026-10-13 08:41:57.080] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
-[2026-10-13 08:41:57.835] INFO Engine - Checking for updates
-[2026-10-13 08:44:46.595] INFO NvdApiDataSource - NVD API has 22,509 records in this update
-[2026-10-13 08:50:40.343] INFO NvdApiDataSource - Downloaded 10,000/22,509 (44%)
-[2026-10-13 08:55:25.818] INFO NvdApiDataSource - Downloaded 20,000/22,509 (89%)
-[2026-10-13 08:56:15.014] INFO NvdApiDataSource - Downloaded 22,509/22,509 (100%)
-[2026-10-13 08:56:15.014] INFO NvdApiDataSource - Completed processing batch 1/12 (8%) in 3,155ms
-[2026-10-13 08:56:15.014] INFO NvdApiDataSource - Completed processing batch 2/12 (17%) in 865ms
-[2026-10-13 08:56:15.014] INFO NvdApiDataSource - Completed processing batch 3/12 (25%) in 1,085ms
-[2026-10-13 08:56:15.015] INFO NvdApiDataSource - Completed processing batch 4/12 (33%) in 858ms
-[2026-10-13 08:56:15.016] INFO NvdApiDataSource - Completed processing batch 5/12 (42%) in 376ms
-[2026-10-13 08:56:15.016] INFO NvdApiDataSource - Completed processing batch 6/12 (50%) in 299ms
-[2026-10-13 08:56:15.016] INFO NvdApiDataSource - Completed processing batch 7/12 (58%) in 214ms
-[2026-10-13 08:56:15.016] INFO NvdApiDataSource - Completed processing batch 8/12 (67%) in 109ms
-[2026-10-13 08:56:15.016] INFO NvdApiDataSource - Completed processing batch 9/12 (75%) in 213ms
-[2026-10-13 08:56:15.016] INFO NvdApiDataSource - Completed processing batch 10/12 (83%) in 108ms
-[2026-10-13 08:56:15.016] INFO NvdApiDataSource - Completed processing batch 11/12 (92%) in 65ms
-[2026-10-13 08:56:15.026] INFO NvdApiDataSource - Completed processing batch 12/12 (100%) in 31ms
-[2026-10-13 08:56:15.159] INFO KnownExploitedDataSource - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
-[2026-10-13 08:56:15.414] INFO CveDB - Begin database defrag
-[2026-10-13 08:56:20.180] INFO CveDB - End database defrag (4770 ms)
-[2026-10-13 08:56:20.202] INFO Engine - Check for updates complete (862367 ms)
-[2026-10-13 08:56:20.321] INFO Engine - 
+[2026-10-20 06:50:55.013] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "embroidery", :version "1.0.68-SNAPSHOT", :nvd {:output-dir "../target/nvd"}}
+[2026-10-20 06:50:56.170] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
+[2026-10-20 06:50:56.760] INFO Engine - Checking for updates
+[2026-10-20 06:50:58.788] INFO NvdApiDataSource - NVD API has 45,702 records in this update
+[2026-10-20 06:51:22.927] INFO NvdApiDataSource - Downloaded 10,000/45,702 (22%)
+[2026-10-20 06:51:50.591] INFO NvdApiDataSource - Downloaded 20,000/45,702 (44%)
+[2026-10-20 06:52:22.383] INFO NvdApiDataSource - Downloaded 30,000/45,702 (66%)
+[2026-10-20 06:52:47.699] INFO NvdApiDataSource - Downloaded 40,000/45,702 (88%)
+[2026-10-20 06:53:05.664] INFO NvdApiDataSource - Downloaded 45,702/45,702 (100%)
+[2026-10-20 06:53:05.665] INFO NvdApiDataSource - Completed processing batch 1/23 (4%) in 2,106ms
+[2026-10-20 06:53:05.665] INFO NvdApiDataSource - Completed processing batch 2/23 (9%) in 1,750ms
+[2026-10-20 06:53:05.665] INFO NvdApiDataSource - Completed processing batch 3/23 (13%) in 887ms
+[2026-10-20 06:53:05.665] INFO NvdApiDataSource - Completed processing batch 4/23 (17%) in 481ms
+[2026-10-20 06:53:05.665] INFO NvdApiDataSource - Completed processing batch 5/23 (22%) in 822ms
+[2026-10-20 06:53:05.665] INFO NvdApiDataSource - Completed processing batch 6/23 (26%) in 918ms
+[2026-10-20 06:53:05.666] INFO NvdApiDataSource - Completed processing batch 7/23 (30%) in 623ms
+[2026-10-20 06:53:05.666] INFO NvdApiDataSource - Completed processing batch 8/23 (35%) in 606ms
+[2026-10-20 06:53:05.666] INFO NvdApiDataSource - Completed processing batch 9/23 (39%) in 429ms
+[2026-10-20 06:53:05.666] INFO NvdApiDataSource - Completed processing batch 10/23 (43%) in 562ms
+[2026-10-20 06:53:05.666] INFO NvdApiDataSource - Completed processing batch 11/23 (48%) in 390ms
+[2026-10-20 06:53:05.666] INFO NvdApiDataSource - Completed processing batch 12/23 (52%) in 404ms
+[2026-10-20 06:53:05.666] INFO NvdApiDataSource - Completed processing batch 13/23 (57%) in 211ms
+[2026-10-20 06:53:05.666] INFO NvdApiDataSource - Completed processing batch 14/23 (61%) in 182ms
+[2026-10-20 06:53:05.667] INFO NvdApiDataSource - Completed processing batch 15/23 (65%) in 222ms
+[2026-10-20 06:53:05.667] INFO NvdApiDataSource - Completed processing batch 16/23 (70%) in 255ms
+[2026-10-20 06:53:05.667] INFO NvdApiDataSource - Completed processing batch 17/23 (74%) in 105ms
+[2026-10-20 06:53:05.667] INFO NvdApiDataSource - Completed processing batch 18/23 (78%) in 151ms
+[2026-10-20 06:53:05.667] INFO NvdApiDataSource - Completed processing batch 19/23 (83%) in 157ms
+[2026-10-20 06:53:05.668] INFO NvdApiDataSource - Completed processing batch 20/23 (87%) in 97ms
+[2026-10-20 06:53:05.668] INFO NvdApiDataSource - Completed processing batch 21/23 (91%) in 100ms
+[2026-10-20 06:53:05.668] INFO NvdApiDataSource - Completed processing batch 22/23 (96%) in 147ms
+[2026-10-20 06:53:05.709] INFO NvdApiDataSource - Completed processing batch 23/23 (100%) in 58ms
+[2026-10-20 06:53:05.833] INFO KnownExploitedDataSource - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+[2026-10-20 06:53:06.079] INFO CveDB - Begin database defrag
+[2026-10-20 06:53:11.783] INFO CveDB - End database defrag (5711 ms)
+[2026-10-20 06:53:11.805] INFO Engine - Check for updates complete (135045 ms)
+[2026-10-20 06:53:11.967] INFO Engine - 
 
 Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user's risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.
 
@@ -31,36 +44,36 @@ Dependency-Check is an open source tool performing a best effort analysis of 3rd
    False Positives: https://dependency-check.github.io/DependencyCheck/general/suppression.html
 
 
-[2026-10-13 08:56:20.321] INFO Engine - Analysis Started
-[2026-10-13 08:56:20.472] INFO Engine - Finished Archive Analyzer (0 seconds)
-[2026-10-13 08:56:20.481] INFO Engine - Finished File Name Analyzer (0 seconds)
-[2026-10-13 08:56:20.645] INFO Engine - Finished Jar Analyzer (0 seconds)
-[2026-10-13 08:56:20.650] INFO Engine - Finished Central Analyzer (0 seconds)
-[2026-10-13 08:56:20.652] INFO Engine - Finished Dependency Merging Analyzer (0 seconds)
-[2026-10-13 08:56:20.912] INFO Engine - Finished Hint Analyzer (0 seconds)
-[2026-10-13 08:56:20.915] INFO Engine - Finished Version Filter Analyzer (0 seconds)
+[2026-10-20 06:53:11.967] INFO Engine - Analysis Started
+[2026-10-20 06:53:12.114] INFO Engine - Finished Archive Analyzer (0 seconds)
+[2026-10-20 06:53:12.121] INFO Engine - Finished File Name Analyzer (0 seconds)
+[2026-10-20 06:53:12.727] INFO Engine - Finished Jar Analyzer (0 seconds)
+[2026-10-20 06:53:12.729] INFO Engine - Finished Central Analyzer (0 seconds)
+[2026-10-20 06:53:12.731] INFO Engine - Finished Dependency Merging Analyzer (0 seconds)
+[2026-10-20 06:53:13.007] INFO Engine - Finished Hint Analyzer (0 seconds)
+[2026-10-20 06:53:13.009] INFO Engine - Finished Version Filter Analyzer (0 seconds)
 WARNING: A restricted method in java.lang.foreign.Linker has been called
 WARNING: java.lang.foreign.Linker::downcallHandle has been called by org.apache.lucene.store.PosixNativeAccess in an unnamed module (file:/home/runner/.m2/repository/org/apache/lucene/lucene-core/9.12.3/lucene-core-9.12.3.jar)
 WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
 WARNING: Restricted methods will be blocked in a future release unless native access is enabled
 
-[2026-10-13 08:56:21.193] INFO MemorySegmentIndexInputProvider - Using MemorySegmentIndexInput and native madvise support with Java 21 or later; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
-[2026-10-13 08:56:21.270] WARN VectorizationProvider - You are running with Java 23 or later. To make full use of the Vector API, please update Apache Lucene.
-[2026-10-13 08:56:22.859] INFO CPEAnalyzer - Created CPE Index (1 seconds)
-[2026-10-13 08:56:23.335] INFO Engine - Finished CPE Analyzer (2 seconds)
-[2026-10-13 08:56:23.342] INFO Engine - Finished False Positive Analyzer (0 seconds)
-[2026-10-13 08:56:23.352] INFO Engine - Finished NVD CVE Analyzer (0 seconds)
-[2026-10-13 08:56:23.352] WARN OssIndexAnalyzer - Disabling OSS Index analyzer due to missing user/password credentials. Authentication is now required: https://ossindex.sonatype.org/doc/auth-required
-[2026-10-13 08:56:23.353] INFO Engine - Finished Vulnerability Suppression Analyzer (0 seconds)
-[2026-10-13 08:56:23.366] INFO Engine - Finished Known Exploited Vulnerability Analyzer (0 seconds)
-[2026-10-13 08:56:23.367] INFO Engine - Finished Dependency Bundling Analyzer (0 seconds)
-[2026-10-13 08:56:23.368] INFO Engine - Finished Unused Suppression Rule Analyzer (0 seconds)
-[2026-10-13 08:56:23.379] INFO Engine - Analysis Complete (3 seconds)
-[2026-10-13 08:56:23.422] INFO ReportGenerator - Writing XML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.xml
-[2026-10-13 08:56:23.545] INFO ReportGenerator - Writing HTML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.html
-[2026-10-13 08:56:23.625] INFO ReportGenerator - Writing JSON report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.json
-[2026-10-13 08:56:23.659] INFO ReportGenerator - Writing CSV report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.csv
-[2026-10-13 08:56:23.663] INFO ReportGenerator - Writing SARIF report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.sarif
-[2026-10-13 08:56:23.671] INFO ReportGenerator - Writing JENKINS report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-jenkins.html
-[2026-10-13 08:56:23.689] INFO ReportGenerator - Writing JUNIT report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-junit.xml
-[2026-10-13 08:56:23.698] INFO ReportGenerator - Writing GITLAB report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-gitlab.json
+[2026-10-20 06:53:13.406] INFO MemorySegmentIndexInputProvider - Using MemorySegmentIndexInput and native madvise support with Java 21 or later; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+[2026-10-20 06:53:13.475] WARN VectorizationProvider - You are running with Java 23 or later. To make full use of the Vector API, please update Apache Lucene.
+[2026-10-20 06:53:15.636] INFO CPEAnalyzer - Created CPE Index (2 seconds)
+[2026-10-20 06:53:16.005] INFO Engine - Finished CPE Analyzer (2 seconds)
+[2026-10-20 06:53:16.010] INFO Engine - Finished False Positive Analyzer (0 seconds)
+[2026-10-20 06:53:16.020] INFO Engine - Finished NVD CVE Analyzer (0 seconds)
+[2026-10-20 06:53:16.020] WARN OssIndexAnalyzer - Disabling OSS Index analyzer due to missing user/password credentials. Authentication is now required: https://ossindex.sonatype.org/doc/auth-required
+[2026-10-20 06:53:16.022] INFO Engine - Finished Vulnerability Suppression Analyzer (0 seconds)
+[2026-10-20 06:53:16.039] INFO Engine - Finished Known Exploited Vulnerability Analyzer (0 seconds)
+[2026-10-20 06:53:16.039] INFO Engine - Finished Dependency Bundling Analyzer (0 seconds)
+[2026-10-20 06:53:16.043] INFO Engine - Finished Unused Suppression Rule Analyzer (0 seconds)
+[2026-10-20 06:53:16.059] INFO Engine - Analysis Complete (4 seconds)
+[2026-10-20 06:53:16.100] INFO ReportGenerator - Writing XML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.xml
+[2026-10-20 06:53:16.262] INFO ReportGenerator - Writing HTML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.html
+[2026-10-20 06:53:16.375] INFO ReportGenerator - Writing JSON report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.json
+[2026-10-20 06:53:16.418] INFO ReportGenerator - Writing CSV report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.csv
+[2026-10-20 06:53:16.422] INFO ReportGenerator - Writing SARIF report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.sarif
+[2026-10-20 06:53:16.434] INFO ReportGenerator - Writing JENKINS report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-jenkins.html
+[2026-10-20 06:53:16.499] INFO ReportGenerator - Writing JUNIT report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-junit.xml
+[2026-10-20 06:53:16.521] INFO ReportGenerator - Writing GITLAB report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-gitlab.json
