@@ -1,11 +1,231 @@
 Downloading: nvd-clojure/nvd-clojure/maven-metadata.xml from clojars
-[2026-11-10 08:57:15.008] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "embroidery", :version "1.0.68-SNAPSHOT", :nvd {:output-dir "../target/nvd"}}
-[2026-11-10 08:57:16.111] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
-[2026-11-10 08:57:16.955] INFO Engine - Checking for updates
-[2026-11-10 08:57:19.977] INFO NvdApiDataSource - NVD API has 80,455 records in this update
-[2026-11-10 08:57:44.032] INFO NvdApiDataSource - Downloaded 10,000/80,455 (12%)
-[2026-11-10 08:58:06.254] INFO NvdApiDataSource - Downloaded 20,000/80,455 (25%)
-[2026-11-10 08:58:27.294] ERROR NvdApiProcessor - Failed to process CVE-2026-6785
+Downloading: nvd-clojure/nvd-clojure/5.3.0/nvd-clojure-5.3.0.pom from clojars
+Downloading: clansi/clansi/1.0.0/clansi-1.0.0.pom from clojars
+Downloading: com/google/errorprone/error_prone_annotations/2.46.0/error_prone_annotations-2.46.0.pom from central
+Downloading: org/owasp/dependency-check-core/12.2.0/dependency-check-core-12.2.0.pom from central
+Downloading: org/slf4j/slf4j-simple/2.0.17/slf4j-simple-2.0.17.pom from central
+Downloading: com/google/errorprone/error_prone_parent/2.46.0/error_prone_parent-2.46.0.pom from central
+Downloading: org/owasp/dependency-check-parent/12.2.0/dependency-check-parent-12.2.0.pom from central
+Downloading: trptcolin/versioneer/0.2.0/versioneer-0.2.0.pom from clojars
+Downloading: com/fasterxml/jackson/jackson-bom/2.20.1/jackson-bom-2.20.1.pom from central
+Downloading: com/fasterxml/jackson/jackson-parent/2.20/jackson-parent-2.20.pom from central
+Downloading: rm-hull/table/0.7.1/table-0.7.1.pom from clojars
+Downloading: com/fasterxml/oss-parent/70/oss-parent-70.pom from central
+Downloading: org/anarres/jdiagnostics/jdiagnostics/1.0.7/jdiagnostics-1.0.7.pom from central
+Downloading: io/github/jeremylong/open-vulnerability-clients/9.0.2/open-vulnerability-clients-9.0.2.pom from central
+Downloading: org/whitesource/pecoff4j/0.0.2.1/pecoff4j-0.0.2.1.pom from central
+Downloading: io/github/jeremylong/jcs3-slf4j/1.0.5/jcs3-slf4j-1.0.5.pom from central
+Downloading: org/apache/commons/commons-jcs3-core/3.2.1/commons-jcs3-core-3.2.1.pom from central
+Downloading: com/github/package-url/packageurl-java/1.5.0/packageurl-java-1.5.0.pom from central
+Downloading: org/semver4j/semver4j/5.8.0/semver4j-5.8.0.pom from central
+Downloading: us/springett/cpe-parser/3.0.1/cpe-parser-3.0.1.pom from central
+Downloading: org/apache/commons/commons-jcs3/3.2.1/commons-jcs3-3.2.1.pom from central
+Downloading: org/assertj/assertj-bom/3.27.6/assertj-bom-3.27.6.pom from central
+Downloading: org/apache/commons/commons-collections4/4.5.0/commons-collections4-4.5.0.pom from central
+Downloading: org/owasp/dependency-check-utils/12.2.0/dependency-check-utils-12.2.0.pom from central
+Downloading: org/apache/commons/commons-parent/58/commons-parent-58.pom from central
+Downloading: org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.pom from central
+Downloading: commons-io/commons-io/2.21.0/commons-io-2.21.0.pom from central
+Downloading: org/apache/commons/commons-lang3/3.20.0/commons-lang3-3.20.0.pom from central
+Downloading: org/apache/commons/commons-parent/72/commons-parent-72.pom from central
+Downloading: org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom from central
+Downloading: org/apache/commons/commons-parent/91/commons-parent-91.pom from central
+Downloading: org/apache/commons/commons-parent/92/commons-parent-92.pom from central
+Downloading: org/junit/junit-bom/5.11.0-M2/junit-bom-5.11.0-M2.pom from central
+Downloading: org/apache/commons/commons-text/1.15.0/commons-text-1.15.0.pom from central
+Downloading: org/apache/commons/commons-dbcp2/2.14.0/commons-dbcp2-2.14.0.pom from central
+Downloading: org/apache/lucene/lucene-core/9.12.3/lucene-core-9.12.3.pom from central
+Downloading: org/apache/lucene/lucene-analysis-common/9.12.3/lucene-analysis-common-9.12.3.pom from central
+Downloading: org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.pom from central
+Downloading: org/apache/lucene/lucene-queryparser/9.12.3/lucene-queryparser-9.12.3.pom from central
+Downloading: org/apache/commons/commons-parent/93/commons-parent-93.pom from central
+Downloading: com/h2database/h2/2.4.240/h2-2.4.240.pom from central
+Downloading: org/apache/velocity/velocity-engine-core/2.4.1/velocity-engine-core-2.4.1.pom from central
+Downloading: org/eclipse/parsson/jakarta.json/1.1.7/jakarta.json-1.1.7.pom from central
+Downloading: org/jsoup/jsoup/1.22.1/jsoup-1.22.1.pom from central
+Downloading: com/fasterxml/jackson/core/jackson-databind/2.20.1/jackson-databind-2.20.1.pom from central
+Downloading: org/apache/velocity/velocity-engine-parent/2.4.1/velocity-engine-parent-2.4.1.pom from central
+Downloading: org/eclipse/parsson/parsson-bundles/1.1.7/parsson-bundles-1.1.7.pom from central
+Downloading: com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.20.1/jackson-datatype-jsr310-2.20.1.pom from central
+Downloading: com/fasterxml/jackson/jackson-base/2.20.1/jackson-base-2.20.1.pom from central
+Downloading: org/apache/velocity/velocity-master/7/velocity-master-7.pom from central
+Downloading: org/eclipse/parsson/project/1.1.7/project-1.1.7.pom from central
+Downloading: com/fasterxml/jackson/module/jackson-modules-java8/2.20.1/jackson-modules-java8-2.20.1.pom from central
+Downloading: com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.20.1/jackson-dataformat-yaml-2.20.1.pom from central
+Downloading: org/eclipse/ee4j/project/1.0.9/project-1.0.9.pom from central
+Downloading: com/h3xstream/retirejs/retirejs-core/3.0.4/retirejs-core-3.0.4.pom from central
+Downloading: com/fasterxml/jackson/module/jackson-module-blackbird/2.20.1/jackson-module-blackbird-2.20.1.pom from central
+Downloading: com/fasterxml/jackson/dataformat/jackson-dataformats-text/2.20.1/jackson-dataformats-text-2.20.1.pom from central
+Downloading: org/sonatype/ossindex/ossindex-service-client/1.8.2/ossindex-service-client-1.8.2.pom from central
+Downloading: com/h3xstream/retirejs/retirejs-root-pom/3.0.4/retirejs-root-pom-3.0.4.pom from central
+Downloading: com/fasterxml/jackson/module/jackson-modules-base/2.20.1/jackson-modules-base-2.20.1.pom from central
+Downloading: com/google/guava/guava/33.5.0-jre/guava-33.5.0-jre.pom from central
+Downloading: org/sonatype/ossindex/ossindex-service/1.8.2/ossindex-service-1.8.2.pom from central
+Downloading: com/moandjiezana/toml/toml4j/0.7.2/toml4j-0.7.2.pom from central
+Downloading: com/hankcs/aho-corasick-double-array-trie/1.2.3/aho-corasick-double-array-trie-1.2.3.pom from central
+Downloading: com/google/guava/guava-parent/33.5.0-jre/guava-parent-33.5.0-jre.pom from central
+Downloading: commons-validator/commons-validator/1.10.1/commons-validator-1.10.1.pom from central
+Downloading: org/eclipse/packager/packager-rpm/0.21.0/packager-rpm-0.21.0.pom from central
+Downloading: org/sonatype/buildsupport/public-parent/28/public-parent-28.pom from central
+Downloading: org/apache/httpcomponents/core5/httpcore5/5.3.6/httpcore5-5.3.6.pom from central
+Downloading: org/sonatype/buildsupport/buildsupport/28/buildsupport-28.pom from central
+Downloading: org/apache/httpcomponents/client5/httpclient5/5.5.1/httpclient5-5.5.1.pom from central
+Downloading: org/eclipse/packager/packager/0.21.0/packager-0.21.0.pom from central
+Downloading: org/apache/httpcomponents/core5/httpcore5-parent/5.3.6/httpcore5-parent-5.3.6.pom from central
+Downloading: org/apache/httpcomponents/client5/httpclient5-parent/5.5.1/httpclient5-parent-5.5.1.pom from central
+Downloading: org/apache/httpcomponents/httpcomponents-parent/13/httpcomponents-parent-13.pom from central
+Downloading: com/fasterxml/jackson/core/jackson-core/2.20.1/jackson-core-2.20.1.pom from central
+Downloading: org/sonatype/ossindex/ossindex-service-bom/1.8.2/ossindex-service-bom-1.8.2.pom from central
+Downloading: org/apache/httpcomponents/httpcomponents-parent/14/httpcomponents-parent-14.pom from central
+Downloading: com/fasterxml/jackson/core/jackson-annotations/2.20/jackson-annotations-2.20.pom from central
+Downloading: org/sonatype/goodies/package-url-java/1.2.0/package-url-java-1.2.0.pom from central
+Downloading: joda-time/joda-time/2.14.0/joda-time-2.14.0.pom from central
+Downloading: org/junit/junit-bom/5.13.0/junit-bom-5.13.0.pom from central
+Downloading: org/sonatype/ossindex/ossindex-service-api/1.8.2/ossindex-service-api-1.8.2.pom from central
+Downloading: org/sonatype/buildsupport/public-parent/13/public-parent-13.pom from central
+Downloading: com/esotericsoftware/minlog/1.3.1/minlog-1.3.1.pom from central
+Downloading: com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.pom from central
+Downloading: org/sonatype/buildsupport/buildsupport/13/buildsupport-13.pom from central
+Downloading: org/jspecify/jspecify/1.0.0/jspecify-1.0.0.pom from central
+Downloading: com/samskivert/jmustache/1.16/jmustache-1.16.pom from central
+Downloading: org/apache/httpcomponents/client5/httpclient5-cache/5.5.1/httpclient5-cache-5.5.1.pom from central
+Downloading: commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.pom from central
+Downloading: org/apache/commons/commons-pool2/2.13.0/commons-pool2-2.13.0.pom from central
+Downloading: jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.pom from central
+Downloading: org/apache/lucene/lucene-queries/9.12.3/lucene-queries-9.12.3.pom from central
+Downloading: org/apache/commons/commons-parent/71/commons-parent-71.pom from central
+Downloading: org/apache/lucene/lucene-sandbox/9.12.3/lucene-sandbox-9.12.3.pom from central
+Downloading: org/eclipse/ee4j/project/1.0.5/project-1.0.5.pom from central
+Downloading: org/yaml/snakeyaml/2.4/snakeyaml-2.4.pom from central
+Downloading: com/github/spullara/mustache/java/compiler/0.9.6/compiler-0.9.6.pom from central
+Downloading: com/google/code/gson/gson/2.9.0/gson-2.9.0.pom from central
+Downloading: javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom from central
+Downloading: com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.pom from central
+Downloading: com/github/spullara/mustache/java/mustache.java/0.9.6/mustache.java-0.9.6.pom from central
+Downloading: com/google/guava/guava-parent/33.4.0-android/guava-parent-33.4.0-android.pom from central
+Downloading: com/google/code/gson/gson-parent/2.9.0/gson-parent-2.9.0.pom from central
+Downloading: javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom from central
+Downloading: com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom from central
+Downloading: com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.pom from central
+Downloading: org/tukaani/xz/1.9/xz-1.9.pom from central
+Downloading: org/eclipse/packager/packager-core/0.21.0/packager-core-0.21.0.pom from central
+Downloading: com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom from central
+Downloading: org/apache/httpcomponents/core5/httpcore5-h2/5.3.6/httpcore5-h2-5.3.6.pom from central
+Downloading: javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.pom from central
+Downloading: org/apache/lucene/lucene-facet/9.12.3/lucene-facet-9.12.3.pom from central
+Downloading: org/bouncycastle/bcprov-jdk18on/1.78/bcprov-jdk18on-1.78.pom from central
+Downloading: org/bouncycastle/bcpg-jdk18on/1.78/bcpg-jdk18on-1.78.pom from central
+Downloading: commons-codec/commons-codec/1.17.1/commons-codec-1.17.1.jar from central
+Downloading: joda-time/joda-time/2.14.0/joda-time-2.14.0.jar from central
+Downloading: com/fasterxml/jackson/module/jackson-module-blackbird/2.20.1/jackson-module-blackbird-2.20.1.jar from central
+Downloading: org/apache/httpcomponents/core5/httpcore5-h2/5.3.6/httpcore5-h2-5.3.6.jar from central
+Downloading: org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1.jar from central
+Downloading: com/google/errorprone/error_prone_annotations/2.46.0/error_prone_annotations-2.46.0.jar from central
+Downloading: org/apache/commons/commons-lang3/3.20.0/commons-lang3-3.20.0.jar from central
+Downloading: commons-validator/commons-validator/1.10.1/commons-validator-1.10.1.jar from central
+Downloading: com/esotericsoftware/minlog/1.3.1/minlog-1.3.1.jar from central
+Downloading: org/bouncycastle/bcpg-jdk18on/1.78/bcpg-jdk18on-1.78.jar from central
+Downloading: org/tukaani/xz/1.9/xz-1.9.jar from central
+Downloading: com/fasterxml/jackson/core/jackson-databind/2.20.1/jackson-databind-2.20.1.jar from central
+Downloading: com/h3xstream/retirejs/retirejs-core/3.0.4/retirejs-core-3.0.4.jar from central
+Downloading: org/eclipse/packager/packager-rpm/0.21.0/packager-rpm-0.21.0.jar from central
+Downloading: jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar from central
+Downloading: org/apache/commons/commons-dbcp2/2.14.0/commons-dbcp2-2.14.0.jar from central
+Downloading: com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.20.1/jackson-dataformat-yaml-2.20.1.jar from central
+Downloading: org/apache/commons/commons-pool2/2.13.0/commons-pool2-2.13.0.jar from central
+Downloading: org/anarres/jdiagnostics/jdiagnostics/1.0.7/jdiagnostics-1.0.7.jar from central
+Downloading: clansi/clansi/1.0.0/clansi-1.0.0.jar from clojars
+Downloading: org/apache/lucene/lucene-analysis-common/9.12.3/lucene-analysis-common-9.12.3.jar from central
+Downloading: org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar from central
+Downloading: com/hankcs/aho-corasick-double-array-trie/1.2.3/aho-corasick-double-array-trie-1.2.3.jar from central
+Downloading: com/h2database/h2/2.4.240/h2-2.4.240.jar from central
+Downloading: org/apache/httpcomponents/client5/httpclient5-cache/5.5.1/httpclient5-cache-5.5.1.jar from central
+Downloading: com/samskivert/jmustache/1.16/jmustache-1.16.jar from central
+Downloading: commons-io/commons-io/2.21.0/commons-io-2.21.0.jar from central
+Downloading: rm-hull/table/0.7.1/table-0.7.1.jar from clojars
+Downloading: com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar from central
+Downloading: org/owasp/dependency-check-core/12.2.0/dependency-check-core-12.2.0.jar from central
+Downloading: com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar from central
+Downloading: com/github/spullara/mustache/java/compiler/0.9.6/compiler-0.9.6.jar from central
+Downloading: org/apache/velocity/velocity-engine-core/2.4.1/velocity-engine-core-2.4.1.jar from central
+Downloading: com/fasterxml/jackson/core/jackson-core/2.20.1/jackson-core-2.20.1.jar from central
+Downloading: org/yaml/snakeyaml/2.4/snakeyaml-2.4.jar from central
+Downloading: org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar from central
+Downloading: org/apache/commons/commons-jcs3-core/3.2.1/commons-jcs3-core-3.2.1.jar from central
+Downloading: org/apache/lucene/lucene-facet/9.12.3/lucene-facet-9.12.3.jar from central
+Downloading: org/owasp/dependency-check-utils/12.2.0/dependency-check-utils-12.2.0.jar from central
+Downloading: trptcolin/versioneer/0.2.0/versioneer-0.2.0.jar from clojars
+Downloading: org/apache/lucene/lucene-core/9.12.3/lucene-core-9.12.3.jar from central
+Downloading: org/slf4j/slf4j-simple/2.0.17/slf4j-simple-2.0.17.jar from central
+Downloading: org/semver4j/semver4j/5.8.0/semver4j-5.8.0.jar from central
+Downloading: org/apache/lucene/lucene-queryparser/9.12.3/lucene-queryparser-9.12.3.jar from central
+Downloading: org/bouncycastle/bcprov-jdk18on/1.78/bcprov-jdk18on-1.78.jar from central
+Downloading: com/fasterxml/jackson/core/jackson-annotations/2.20/jackson-annotations-2.20.jar from central
+Downloading: org/eclipse/packager/packager-core/0.21.0/packager-core-0.21.0.jar from central
+Downloading: org/apache/commons/commons-text/1.15.0/commons-text-1.15.0.jar from central
+Downloading: us/springett/cpe-parser/3.0.1/cpe-parser-3.0.1.jar from central
+Downloading: org/apache/lucene/lucene-queries/9.12.3/lucene-queries-9.12.3.jar from central
+Downloading: com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar from central
+Downloading: com/google/guava/guava/33.5.0-jre/guava-33.5.0-jre.jar from central
+Downloading: org/sonatype/ossindex/ossindex-service-api/1.8.2/ossindex-service-api-1.8.2.jar from central
+Downloading: com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar from central
+Downloading: nvd-clojure/nvd-clojure/5.3.0/nvd-clojure-5.3.0.jar from clojars
+Downloading: io/github/jeremylong/open-vulnerability-clients/9.0.2/open-vulnerability-clients-9.0.2.jar from central
+Downloading: org/eclipse/parsson/jakarta.json/1.1.7/jakarta.json-1.1.7.jar from central
+Downloading: org/apache/lucene/lucene-sandbox/9.12.3/lucene-sandbox-9.12.3.jar from central
+Downloading: org/apache/httpcomponents/client5/httpclient5/5.5.1/httpclient5-5.5.1.jar from central
+Downloading: org/jsoup/jsoup/1.22.1/jsoup-1.22.1.jar from central
+Downloading: org/sonatype/ossindex/ossindex-service-client/1.8.2/ossindex-service-client-1.8.2.jar from central
+Downloading: org/apache/commons/commons-collections4/4.5.0/commons-collections4-4.5.0.jar from central
+Downloading: io/github/jeremylong/jcs3-slf4j/1.0.5/jcs3-slf4j-1.0.5.jar from central
+Downloading: org/apache/httpcomponents/core5/httpcore5/5.3.6/httpcore5-5.3.6.jar from central
+Downloading: com/moandjiezana/toml/toml4j/0.7.2/toml4j-0.7.2.jar from central
+Downloading: com/github/package-url/packageurl-java/1.5.0/packageurl-java-1.5.0.jar from central
+Downloading: javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar from central
+Downloading: org/sonatype/goodies/package-url-java/1.2.0/package-url-java-1.2.0.jar from central
+Downloading: com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.20.1/jackson-datatype-jsr310-2.20.1.jar from central
+Downloading: org/whitesource/pecoff4j/0.0.2.1/pecoff4j-0.0.2.1.jar from central
+Downloading: javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar from central
+Downloading: com/google/code/gson/gson/2.9.0/gson-2.9.0.jar from central
+[2026-11-17 09:53:33.033] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "embroidery", :version "1.0.68-SNAPSHOT", :nvd {:output-dir "../target/nvd"}}
+[2026-11-17 09:53:33.986] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
+[2026-11-17 09:53:34.347] INFO Engine - Checking for updates
+[2026-11-17 09:53:36.205] INFO NvdApiDataSource - NVD API has 426,335 records in this update
+[2026-11-17 09:53:56.067] INFO NvdApiDataSource - Downloaded 10,000/426,335 (2%)
+[2026-11-17 09:54:21.287] INFO NvdApiDataSource - Downloaded 20,000/426,335 (5%)
+[2026-11-17 09:54:45.524] INFO NvdApiDataSource - Downloaded 30,000/426,335 (7%)
+[2026-11-17 09:55:14.880] INFO NvdApiDataSource - Downloaded 40,000/426,335 (9%)
+[2026-11-17 09:55:35.874] INFO NvdApiDataSource - Downloaded 50,000/426,335 (12%)
+[2026-11-17 09:56:00.881] INFO NvdApiDataSource - Downloaded 60,000/426,335 (14%)
+[2026-11-17 09:56:25.594] INFO NvdApiDataSource - Downloaded 70,000/426,335 (16%)
+[2026-11-17 09:56:50.879] INFO NvdApiDataSource - Downloaded 80,000/426,335 (19%)
+[2026-11-17 09:57:15.937] INFO NvdApiDataSource - Downloaded 90,000/426,335 (21%)
+[2026-11-17 09:57:40.717] INFO NvdApiDataSource - Downloaded 100,000/426,335 (23%)
+[2026-11-17 09:58:05.980] INFO NvdApiDataSource - Downloaded 110,000/426,335 (26%)
+[2026-11-17 09:58:30.616] INFO NvdApiDataSource - Downloaded 120,000/426,335 (28%)
+[2026-11-17 09:58:55.877] INFO NvdApiDataSource - Downloaded 130,000/426,335 (30%)
+[2026-11-17 09:59:20.600] INFO NvdApiDataSource - Downloaded 140,000/426,335 (33%)
+[2026-11-17 09:59:45.926] INFO NvdApiDataSource - Downloaded 150,000/426,335 (35%)
+[2026-11-17 10:00:17.785] INFO NvdApiDataSource - Downloaded 160,000/426,335 (38%)
+[2026-11-17 10:00:56.690] INFO NvdApiDataSource - Downloaded 170,000/426,335 (40%)
+[2026-11-17 10:01:22.025] INFO NvdApiDataSource - Downloaded 180,000/426,335 (42%)
+[2026-11-17 10:01:49.439] INFO NvdApiDataSource - Downloaded 190,000/426,335 (45%)
+[2026-11-17 10:02:14.204] INFO NvdApiDataSource - Downloaded 200,000/426,335 (47%)
+[2026-11-17 10:02:36.997] INFO NvdApiDataSource - Downloaded 210,000/426,335 (49%)
+[2026-11-17 10:03:08.354] INFO NvdApiDataSource - Downloaded 220,000/426,335 (52%)
+[2026-11-17 10:03:31.319] INFO NvdApiDataSource - Downloaded 230,000/426,335 (54%)
+[2026-11-17 10:04:14.220] INFO NvdApiDataSource - Downloaded 240,000/426,335 (56%)
+[2026-11-17 10:04:39.084] INFO NvdApiDataSource - Downloaded 250,000/426,335 (59%)
+[2026-11-17 10:05:06.564] INFO NvdApiDataSource - Downloaded 260,000/426,335 (61%)
+[2026-11-17 10:05:29.103] INFO NvdApiDataSource - Downloaded 270,000/426,335 (63%)
+[2026-11-17 10:05:53.948] INFO NvdApiDataSource - Downloaded 280,000/426,335 (66%)
+[2026-11-17 10:06:19.275] INFO NvdApiDataSource - Downloaded 290,000/426,335 (68%)
+[2026-11-17 10:06:43.464] INFO NvdApiDataSource - Downloaded 300,000/426,335 (70%)
+[2026-11-17 10:07:09.205] INFO NvdApiDataSource - Downloaded 310,000/426,335 (73%)
+[2026-11-17 10:07:33.953] INFO NvdApiDataSource - Downloaded 320,000/426,335 (75%)
+[2026-11-17 10:07:58.612] INFO NvdApiDataSource - Downloaded 330,000/426,335 (77%)
+[2026-11-17 10:08:23.893] INFO NvdApiDataSource - Downloaded 340,000/426,335 (80%)
+[2026-11-17 10:08:44.115] ERROR NvdApiProcessor - Failed to process CVE-2026-6785
 org.owasp.dependencycheck.data.nvdcve.DatabaseException: Error updating 'CVE-2026-6785'; Value too long for column "URL CHARACTER VARYING(1000)": "'https://bugzilla.mozilla.org/buglist.cgi?bug_id=1935995%2C1999158%2C2015952%2C2... (1585)"; SQL statement:
 INSERT INTO reference (cveid, name, url, source) VALUES (?, ?, ?, ?) [22001-240]
 	at org.owasp.dependencycheck.data.nvdcve.CveDB.updateVulnerability(CveDB.java:1104)
@@ -16,7 +236,7 @@ INSERT INTO reference (cveid, name, url, source) VALUES (?, ?, ?, ?) [22001-240]
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-[2026-11-10 08:58:27.298] ERROR NvdApiProcessor - Failed to process CVE-2026-6786
+[2026-11-17 10:08:44.119] ERROR NvdApiProcessor - Failed to process CVE-2026-6786
 org.owasp.dependencycheck.data.nvdcve.DatabaseException: Error updating 'CVE-2026-6786'; Value too long for column "URL CHARACTER VARYING(1000)": "'https://bugzilla.mozilla.org/buglist.cgi?bug_id=2010727%2C2019004%2C2019224%2C2... (1115)"; SQL statement:
 INSERT INTO reference (cveid, name, url, source) VALUES (?, ?, ?, ?) [22001-240]
 	at org.owasp.dependencycheck.data.nvdcve.CveDB.updateVulnerability(CveDB.java:1104)
@@ -27,59 +247,234 @@ INSERT INTO reference (cveid, name, url, source) VALUES (?, ?, ?, ?) [22001-240]
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1474)
-[2026-11-10 08:58:30.513] INFO NvdApiDataSource - Downloaded 30,000/80,455 (37%)
-[2026-11-10 08:58:56.111] INFO NvdApiDataSource - Downloaded 40,000/80,455 (50%)
-[2026-11-10 08:59:20.750] INFO NvdApiDataSource - Downloaded 50,000/80,455 (62%)
-[2026-11-10 08:59:45.130] INFO NvdApiDataSource - Downloaded 60,000/80,455 (75%)
-[2026-11-10 09:00:14.999] INFO NvdApiDataSource - Downloaded 70,000/80,455 (87%)
-[2026-11-10 09:00:46.200] INFO NvdApiDataSource - Downloaded 80,000/80,455 (99%)
-[2026-11-10 09:00:47.270] INFO NvdApiDataSource - Downloaded 80,455/80,455 (100%)
-[2026-11-10 09:00:47.270] INFO NvdApiDataSource - Completed processing batch 1/41 (2%) in 2,451ms
-[2026-11-10 09:00:47.270] INFO NvdApiDataSource - Completed processing batch 2/41 (5%) in 1,603ms
-[2026-11-10 09:00:47.270] INFO NvdApiDataSource - Completed processing batch 3/41 (7%) in 1,285ms
-[2026-11-10 09:00:47.270] INFO NvdApiDataSource - Completed processing batch 4/41 (10%) in 358ms
-[2026-11-10 09:00:47.271] INFO NvdApiDataSource - Completed processing batch 5/41 (12%) in 349ms
-[2026-11-10 09:00:47.271] INFO NvdApiDataSource - Completed processing batch 6/41 (15%) in 606ms
-[2026-11-10 09:00:47.271] INFO NvdApiDataSource - Completed processing batch 7/41 (17%) in 663ms
-[2026-11-10 09:00:47.271] INFO NvdApiDataSource - Completed processing batch 8/41 (20%) in 551ms
-[2026-11-10 09:00:47.271] INFO NvdApiDataSource - Completed processing batch 9/41 (22%) in 529ms
-[2026-11-10 09:00:47.271] INFO NvdApiDataSource - Completed processing batch 10/41 (24%) in 474ms
-[2026-11-10 09:00:47.271] INFO NvdApiDataSource - Completed processing batch 11/41 (27%) in 548ms
-[2026-11-10 09:00:47.272] INFO NvdApiDataSource - Completed processing batch 12/41 (29%) in 539ms
-[2026-11-10 09:00:47.272] INFO NvdApiDataSource - Completed processing batch 13/41 (32%) in 564ms
-[2026-11-10 09:00:47.272] INFO NvdApiDataSource - Completed processing batch 14/41 (34%) in 582ms
-[2026-11-10 09:00:47.272] INFO NvdApiDataSource - Completed processing batch 15/41 (37%) in 748ms
-[2026-11-10 09:00:47.272] INFO NvdApiDataSource - Completed processing batch 16/41 (39%) in 755ms
-[2026-11-10 09:00:47.272] INFO NvdApiDataSource - Completed processing batch 17/41 (41%) in 362ms
-[2026-11-10 09:00:47.272] INFO NvdApiDataSource - Completed processing batch 18/41 (44%) in 398ms
-[2026-11-10 09:00:47.273] INFO NvdApiDataSource - Completed processing batch 19/41 (46%) in 354ms
-[2026-11-10 09:00:47.273] INFO NvdApiDataSource - Completed processing batch 20/41 (49%) in 416ms
-[2026-11-10 09:00:47.273] INFO NvdApiDataSource - Completed processing batch 21/41 (51%) in 411ms
-[2026-11-10 09:00:47.273] INFO NvdApiDataSource - Completed processing batch 22/41 (54%) in 393ms
-[2026-11-10 09:00:47.273] INFO NvdApiDataSource - Completed processing batch 23/41 (56%) in 247ms
-[2026-11-10 09:00:47.273] INFO NvdApiDataSource - Completed processing batch 24/41 (59%) in 365ms
-[2026-11-10 09:00:47.274] INFO NvdApiDataSource - Completed processing batch 25/41 (61%) in 237ms
-[2026-11-10 09:00:47.274] INFO NvdApiDataSource - Completed processing batch 26/41 (63%) in 183ms
-[2026-11-10 09:00:47.274] INFO NvdApiDataSource - Completed processing batch 27/41 (66%) in 152ms
-[2026-11-10 09:00:47.274] INFO NvdApiDataSource - Completed processing batch 28/41 (68%) in 149ms
-[2026-11-10 09:00:47.274] INFO NvdApiDataSource - Completed processing batch 29/41 (71%) in 149ms
-[2026-11-10 09:00:47.274] INFO NvdApiDataSource - Completed processing batch 30/41 (73%) in 99ms
-[2026-11-10 09:00:47.274] INFO NvdApiDataSource - Completed processing batch 31/41 (76%) in 197ms
-[2026-11-10 09:00:47.275] INFO NvdApiDataSource - Completed processing batch 32/41 (78%) in 82ms
-[2026-11-10 09:00:47.275] INFO NvdApiDataSource - Completed processing batch 33/41 (80%) in 173ms
-[2026-11-10 09:00:47.275] INFO NvdApiDataSource - Completed processing batch 34/41 (83%) in 96ms
-[2026-11-10 09:00:47.275] INFO NvdApiDataSource - Completed processing batch 35/41 (85%) in 172ms
-[2026-11-10 09:00:47.275] INFO NvdApiDataSource - Completed processing batch 36/41 (88%) in 148ms
-[2026-11-10 09:00:47.275] INFO NvdApiDataSource - Completed processing batch 37/41 (90%) in 86ms
-[2026-11-10 09:00:47.275] INFO NvdApiDataSource - Completed processing batch 38/41 (93%) in 78ms
-[2026-11-10 09:00:47.276] INFO NvdApiDataSource - Completed processing batch 39/41 (95%) in 90ms
-[2026-11-10 09:00:47.276] INFO NvdApiDataSource - Completed processing batch 40/41 (98%) in 49ms
-[2026-11-10 09:00:47.276] INFO NvdApiDataSource - Completed processing batch 41/41 (100%) in 33ms
-[2026-11-10 09:00:47.446] INFO KnownExploitedDataSource - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
-[2026-11-10 09:00:47.707] INFO CveDB - Begin database defrag
-[2026-11-10 09:00:53.275] INFO CveDB - End database defrag (5574 ms)
-[2026-11-10 09:00:53.311] INFO Engine - Check for updates complete (216355 ms)
-[2026-11-10 09:00:53.440] INFO Engine - 
+[2026-11-17 10:08:48.773] INFO NvdApiDataSource - Downloaded 350,000/426,335 (82%)
+[2026-11-17 10:09:13.972] INFO NvdApiDataSource - Downloaded 360,000/426,335 (84%)
+[2026-11-17 10:09:39.120] INFO NvdApiDataSource - Downloaded 370,000/426,335 (87%)
+[2026-11-17 10:10:03.736] INFO NvdApiDataSource - Downloaded 380,000/426,335 (89%)
+[2026-11-17 10:10:28.799] INFO NvdApiDataSource - Downloaded 390,000/426,335 (91%)
+[2026-11-17 10:10:53.340] INFO NvdApiDataSource - Downloaded 400,000/426,335 (94%)
+[2026-11-17 10:11:37.880] INFO NvdApiDataSource - Downloaded 410,000/426,335 (96%)
+[2026-11-17 10:11:58.866] INFO NvdApiDataSource - Downloaded 420,000/426,335 (99%)
+[2026-11-17 10:12:18.237] INFO NvdApiDataSource - Downloaded 426,335/426,335 (100%)
+[2026-11-17 10:12:18.237] INFO NvdApiDataSource - Completed processing batch 1/214 (0%) in 1,457ms
+[2026-11-17 10:12:18.237] INFO NvdApiDataSource - Completed processing batch 2/214 (1%) in 1,124ms
+[2026-11-17 10:12:18.237] INFO NvdApiDataSource - Completed processing batch 3/214 (1%) in 685ms
+[2026-11-17 10:12:18.237] INFO NvdApiDataSource - Completed processing batch 4/214 (2%) in 698ms
+[2026-11-17 10:12:18.237] INFO NvdApiDataSource - Completed processing batch 5/214 (2%) in 713ms
+[2026-11-17 10:12:18.237] INFO NvdApiDataSource - Completed processing batch 6/214 (3%) in 524ms
+[2026-11-17 10:12:18.238] INFO NvdApiDataSource - Completed processing batch 7/214 (3%) in 515ms
+[2026-11-17 10:12:18.238] INFO NvdApiDataSource - Completed processing batch 8/214 (4%) in 632ms
+[2026-11-17 10:12:18.238] INFO NvdApiDataSource - Completed processing batch 9/214 (4%) in 525ms
+[2026-11-17 10:12:18.238] INFO NvdApiDataSource - Completed processing batch 10/214 (5%) in 491ms
+[2026-11-17 10:12:18.238] INFO NvdApiDataSource - Completed processing batch 11/214 (5%) in 438ms
+[2026-11-17 10:12:18.238] INFO NvdApiDataSource - Completed processing batch 12/214 (6%) in 491ms
+[2026-11-17 10:12:18.238] INFO NvdApiDataSource - Completed processing batch 13/214 (6%) in 430ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 14/214 (7%) in 484ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 15/214 (7%) in 515ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 16/214 (7%) in 589ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 17/214 (8%) in 641ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 18/214 (8%) in 589ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 19/214 (9%) in 755ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 20/214 (9%) in 802ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 21/214 (10%) in 783ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 22/214 (10%) in 801ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 23/214 (11%) in 1,189ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 24/214 (11%) in 1,093ms
+[2026-11-17 10:12:18.239] INFO NvdApiDataSource - Completed processing batch 25/214 (12%) in 890ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 26/214 (12%) in 1,064ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 27/214 (13%) in 1,025ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 28/214 (13%) in 1,020ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 29/214 (14%) in 858ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 30/214 (14%) in 780ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 31/214 (14%) in 787ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 32/214 (15%) in 746ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 33/214 (15%) in 518ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 34/214 (16%) in 535ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 35/214 (16%) in 532ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 36/214 (17%) in 504ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 37/214 (17%) in 426ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 38/214 (18%) in 593ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 39/214 (18%) in 485ms
+[2026-11-17 10:12:18.240] INFO NvdApiDataSource - Completed processing batch 40/214 (19%) in 419ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 41/214 (19%) in 416ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 42/214 (20%) in 299ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 43/214 (20%) in 377ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 44/214 (21%) in 83ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 45/214 (21%) in 140ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 46/214 (21%) in 369ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 47/214 (22%) in 449ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 48/214 (22%) in 425ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 49/214 (23%) in 364ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 50/214 (23%) in 283ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 51/214 (24%) in 303ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 52/214 (24%) in 189ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 53/214 (25%) in 427ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 54/214 (25%) in 389ms
+[2026-11-17 10:12:18.241] INFO NvdApiDataSource - Completed processing batch 55/214 (26%) in 328ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 56/214 (26%) in 322ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 57/214 (27%) in 282ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 58/214 (27%) in 290ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 59/214 (28%) in 279ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 60/214 (28%) in 233ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 61/214 (29%) in 284ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 62/214 (29%) in 355ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 63/214 (29%) in 294ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 64/214 (30%) in 362ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 65/214 (30%) in 296ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 66/214 (31%) in 380ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 67/214 (31%) in 263ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 68/214 (32%) in 301ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 69/214 (32%) in 287ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 70/214 (33%) in 292ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 71/214 (33%) in 289ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 72/214 (34%) in 319ms
+[2026-11-17 10:12:18.242] INFO NvdApiDataSource - Completed processing batch 73/214 (34%) in 262ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 74/214 (35%) in 304ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 75/214 (35%) in 260ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 76/214 (36%) in 301ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 77/214 (36%) in 257ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 78/214 (36%) in 286ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 79/214 (37%) in 246ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 80/214 (37%) in 335ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 81/214 (38%) in 293ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 82/214 (38%) in 323ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 83/214 (39%) in 249ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 84/214 (39%) in 305ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 85/214 (40%) in 236ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 86/214 (40%) in 291ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 87/214 (41%) in 375ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 88/214 (41%) in 276ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 89/214 (42%) in 202ms
+[2026-11-17 10:12:18.243] INFO NvdApiDataSource - Completed processing batch 90/214 (42%) in 298ms
+[2026-11-17 10:12:18.244] INFO NvdApiDataSource - Completed processing batch 91/214 (43%) in 280ms
+[2026-11-17 10:12:18.244] INFO NvdApiDataSource - Completed processing batch 92/214 (43%) in 272ms
+[2026-11-17 10:12:18.244] INFO NvdApiDataSource - Completed processing batch 93/214 (43%) in 360ms
+[2026-11-17 10:12:18.244] INFO NvdApiDataSource - Completed processing batch 94/214 (44%) in 297ms
+[2026-11-17 10:12:18.244] INFO NvdApiDataSource - Completed processing batch 95/214 (44%) in 276ms
+[2026-11-17 10:12:18.244] INFO NvdApiDataSource - Completed processing batch 96/214 (45%) in 276ms
+[2026-11-17 10:12:18.244] INFO NvdApiDataSource - Completed processing batch 97/214 (45%) in 246ms
+[2026-11-17 10:12:18.244] INFO NvdApiDataSource - Completed processing batch 98/214 (46%) in 242ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 99/214 (46%) in 253ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 100/214 (47%) in 323ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 101/214 (47%) in 271ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 102/214 (48%) in 249ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 103/214 (48%) in 246ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 104/214 (49%) in 305ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 105/214 (49%) in 270ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 106/214 (50%) in 230ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 107/214 (50%) in 341ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 108/214 (50%) in 271ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 109/214 (51%) in 300ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 110/214 (51%) in 288ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 111/214 (52%) in 329ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 112/214 (52%) in 379ms
+[2026-11-17 10:12:18.245] INFO NvdApiDataSource - Completed processing batch 113/214 (53%) in 218ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 114/214 (53%) in 289ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 115/214 (54%) in 299ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 116/214 (54%) in 341ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 117/214 (55%) in 268ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 118/214 (55%) in 289ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 119/214 (56%) in 316ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 120/214 (56%) in 315ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 121/214 (57%) in 236ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 122/214 (57%) in 260ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 123/214 (57%) in 210ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 124/214 (58%) in 194ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 125/214 (58%) in 196ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 126/214 (59%) in 185ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 127/214 (59%) in 247ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 128/214 (60%) in 304ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 129/214 (60%) in 236ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 130/214 (61%) in 251ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 131/214 (61%) in 291ms
+[2026-11-17 10:12:18.246] INFO NvdApiDataSource - Completed processing batch 132/214 (62%) in 246ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 133/214 (62%) in 258ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 134/214 (63%) in 283ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 135/214 (63%) in 235ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 136/214 (64%) in 199ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 137/214 (64%) in 156ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 138/214 (64%) in 189ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 139/214 (65%) in 169ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 140/214 (65%) in 221ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 141/214 (66%) in 256ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 142/214 (66%) in 169ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 143/214 (67%) in 186ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 144/214 (67%) in 142ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 145/214 (68%) in 226ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 146/214 (68%) in 182ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 147/214 (69%) in 203ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 148/214 (69%) in 217ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 149/214 (70%) in 217ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 150/214 (70%) in 174ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 151/214 (71%) in 204ms
+[2026-11-17 10:12:18.247] INFO NvdApiDataSource - Completed processing batch 152/214 (71%) in 169ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 153/214 (71%) in 197ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 154/214 (72%) in 230ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 155/214 (72%) in 162ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 156/214 (73%) in 194ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 157/214 (73%) in 199ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 158/214 (74%) in 183ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 159/214 (74%) in 162ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 160/214 (75%) in 208ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 161/214 (75%) in 159ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 162/214 (76%) in 188ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 163/214 (76%) in 91ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 164/214 (77%) in 256ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 165/214 (77%) in 173ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 166/214 (78%) in 192ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 167/214 (78%) in 174ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 168/214 (79%) in 270ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 169/214 (79%) in 254ms
+[2026-11-17 10:12:18.248] INFO NvdApiDataSource - Completed processing batch 170/214 (79%) in 206ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 171/214 (80%) in 276ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 172/214 (80%) in 257ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 173/214 (81%) in 176ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 174/214 (81%) in 245ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 175/214 (82%) in 266ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 176/214 (82%) in 288ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 177/214 (83%) in 128ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 178/214 (83%) in 149ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 179/214 (84%) in 163ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 180/214 (84%) in 143ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 181/214 (85%) in 152ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 182/214 (85%) in 127ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 183/214 (86%) in 122ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 184/214 (86%) in 200ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 185/214 (86%) in 180ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 186/214 (87%) in 111ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 187/214 (87%) in 144ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 188/214 (88%) in 130ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 189/214 (88%) in 89ms
+[2026-11-17 10:12:18.249] INFO NvdApiDataSource - Completed processing batch 190/214 (89%) in 107ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 191/214 (89%) in 101ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 192/214 (90%) in 134ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 193/214 (90%) in 78ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 194/214 (91%) in 105ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 195/214 (91%) in 147ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 196/214 (92%) in 64ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 197/214 (92%) in 94ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 198/214 (93%) in 64ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 199/214 (93%) in 86ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 200/214 (93%) in 86ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 201/214 (94%) in 68ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 202/214 (94%) in 98ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 203/214 (95%) in 54ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 204/214 (95%) in 118ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 205/214 (96%) in 66ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 206/214 (96%) in 149ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 207/214 (97%) in 71ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 208/214 (97%) in 49ms
+[2026-11-17 10:12:18.250] INFO NvdApiDataSource - Completed processing batch 209/214 (98%) in 105ms
+[2026-11-17 10:12:18.251] INFO NvdApiDataSource - Completed processing batch 210/214 (98%) in 66ms
+[2026-11-17 10:12:18.251] INFO NvdApiDataSource - Completed processing batch 211/214 (99%) in 49ms
+[2026-11-17 10:12:18.251] INFO NvdApiDataSource - Completed processing batch 212/214 (99%) in 93ms
+[2026-11-17 10:12:18.251] INFO NvdApiDataSource - Completed processing batch 213/214 (100%) in 45ms
+[2026-11-17 10:12:18.251] INFO NvdApiDataSource - Completed processing batch 214/214 (100%) in 15ms
+[2026-11-17 10:12:18.406] INFO KnownExploitedDataSource - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+[2026-11-17 10:12:18.682] INFO CveDB - Begin database defrag
+[2026-11-17 10:12:22.053] INFO CveDB - End database defrag (3374 ms)
+[2026-11-17 10:12:22.075] INFO Engine - Check for updates complete (1127728 ms)
+[2026-11-17 10:12:22.191] INFO Engine - 
 
 Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user's risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.
 
@@ -88,36 +483,36 @@ Dependency-Check is an open source tool performing a best effort analysis of 3rd
    False Positives: https://dependency-check.github.io/DependencyCheck/general/suppression.html
 
 
-[2026-11-10 09:00:53.440] INFO Engine - Analysis Started
-[2026-11-10 09:00:53.612] INFO Engine - Finished Archive Analyzer (0 seconds)
-[2026-11-10 09:00:53.619] INFO Engine - Finished File Name Analyzer (0 seconds)
-[2026-11-10 09:00:53.968] INFO Engine - Finished Jar Analyzer (0 seconds)
-[2026-11-10 09:00:53.971] INFO Engine - Finished Central Analyzer (0 seconds)
-[2026-11-10 09:00:53.974] INFO Engine - Finished Dependency Merging Analyzer (0 seconds)
-[2026-11-10 09:00:54.298] INFO Engine - Finished Hint Analyzer (0 seconds)
-[2026-11-10 09:00:54.300] INFO Engine - Finished Version Filter Analyzer (0 seconds)
+[2026-11-17 10:12:22.191] INFO Engine - Analysis Started
+[2026-11-17 10:12:22.325] INFO Engine - Finished Archive Analyzer (0 seconds)
+[2026-11-17 10:12:22.330] INFO Engine - Finished File Name Analyzer (0 seconds)
+[2026-11-17 10:12:22.752] INFO Engine - Finished Jar Analyzer (0 seconds)
+[2026-11-17 10:12:22.754] INFO Engine - Finished Central Analyzer (0 seconds)
+[2026-11-17 10:12:22.755] INFO Engine - Finished Dependency Merging Analyzer (0 seconds)
+[2026-11-17 10:12:22.874] INFO Engine - Finished Hint Analyzer (0 seconds)
+[2026-11-17 10:12:22.877] INFO Engine - Finished Version Filter Analyzer (0 seconds)
 WARNING: A restricted method in java.lang.foreign.Linker has been called
 WARNING: java.lang.foreign.Linker::downcallHandle has been called by org.apache.lucene.store.PosixNativeAccess in an unnamed module (file:/home/runner/.m2/repository/org/apache/lucene/lucene-core/9.12.3/lucene-core-9.12.3.jar)
 WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
 WARNING: Restricted methods will be blocked in a future release unless native access is enabled
 
-[2026-11-10 09:00:54.753] INFO MemorySegmentIndexInputProvider - Using MemorySegmentIndexInput and native madvise support with Java 21 or later; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
-[2026-11-10 09:00:54.820] WARN VectorizationProvider - You are running with Java 23 or later. To make full use of the Vector API, please update Apache Lucene.
-[2026-11-10 09:00:56.495] INFO CPEAnalyzer - Created CPE Index (2 seconds)
-[2026-11-10 09:00:56.886] INFO Engine - Finished CPE Analyzer (2 seconds)
-[2026-11-10 09:00:56.892] INFO Engine - Finished False Positive Analyzer (0 seconds)
-[2026-11-10 09:00:56.902] INFO Engine - Finished NVD CVE Analyzer (0 seconds)
-[2026-11-10 09:00:56.902] WARN OssIndexAnalyzer - Disabling OSS Index analyzer due to missing user/password credentials. Authentication is now required: https://ossindex.sonatype.org/doc/auth-required
-[2026-11-10 09:00:56.905] INFO Engine - Finished Vulnerability Suppression Analyzer (0 seconds)
-[2026-11-10 09:00:56.925] INFO Engine - Finished Known Exploited Vulnerability Analyzer (0 seconds)
-[2026-11-10 09:00:56.926] INFO Engine - Finished Dependency Bundling Analyzer (0 seconds)
-[2026-11-10 09:00:56.928] INFO Engine - Finished Unused Suppression Rule Analyzer (0 seconds)
-[2026-11-10 09:00:56.949] INFO Engine - Analysis Complete (3 seconds)
-[2026-11-10 09:00:57.004] INFO ReportGenerator - Writing XML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.xml
-[2026-11-10 09:00:57.130] INFO ReportGenerator - Writing HTML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.html
-[2026-11-10 09:00:57.217] INFO ReportGenerator - Writing JSON report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.json
-[2026-11-10 09:00:57.253] INFO ReportGenerator - Writing CSV report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.csv
-[2026-11-10 09:00:57.257] INFO ReportGenerator - Writing SARIF report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.sarif
-[2026-11-10 09:00:57.267] INFO ReportGenerator - Writing JENKINS report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-jenkins.html
-[2026-11-10 09:00:57.286] INFO ReportGenerator - Writing JUNIT report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-junit.xml
-[2026-11-10 09:00:57.299] INFO ReportGenerator - Writing GITLAB report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-gitlab.json
+[2026-11-17 10:12:23.101] INFO MemorySegmentIndexInputProvider - Using MemorySegmentIndexInput and native madvise support with Java 21 or later; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+[2026-11-17 10:12:23.147] WARN VectorizationProvider - You are running with Java 23 or later. To make full use of the Vector API, please update Apache Lucene.
+[2026-11-17 10:12:24.380] INFO CPEAnalyzer - Created CPE Index (1 seconds)
+[2026-11-17 10:12:24.616] INFO Engine - Finished CPE Analyzer (1 seconds)
+[2026-11-17 10:12:24.619] INFO Engine - Finished False Positive Analyzer (0 seconds)
+[2026-11-17 10:12:24.627] INFO Engine - Finished NVD CVE Analyzer (0 seconds)
+[2026-11-17 10:12:24.627] WARN OssIndexAnalyzer - Disabling OSS Index analyzer due to missing user/password credentials. Authentication is now required: https://ossindex.sonatype.org/doc/auth-required
+[2026-11-17 10:12:24.631] INFO Engine - Finished Vulnerability Suppression Analyzer (0 seconds)
+[2026-11-17 10:12:24.646] INFO Engine - Finished Known Exploited Vulnerability Analyzer (0 seconds)
+[2026-11-17 10:12:24.646] INFO Engine - Finished Dependency Bundling Analyzer (0 seconds)
+[2026-11-17 10:12:24.647] INFO Engine - Finished Unused Suppression Rule Analyzer (0 seconds)
+[2026-11-17 10:12:24.654] INFO Engine - Analysis Complete (2 seconds)
+[2026-11-17 10:12:24.688] INFO ReportGenerator - Writing XML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.xml
+[2026-11-17 10:12:24.762] INFO ReportGenerator - Writing HTML report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.html
+[2026-11-17 10:12:24.817] INFO ReportGenerator - Writing JSON report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.json
+[2026-11-17 10:12:24.840] INFO ReportGenerator - Writing CSV report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.csv
+[2026-11-17 10:12:24.842] INFO ReportGenerator - Writing SARIF report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-report.sarif
+[2026-11-17 10:12:24.849] INFO ReportGenerator - Writing JENKINS report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-jenkins.html
+[2026-11-17 10:12:24.862] INFO ReportGenerator - Writing JUNIT report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-junit.xml
+[2026-11-17 10:12:24.869] INFO ReportGenerator - Writing GITLAB report to: /home/runner/work/embroidery/embroidery/.nvd/../target/nvd/dependency-check-gitlab.json
